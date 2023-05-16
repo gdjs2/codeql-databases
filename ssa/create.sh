@@ -1,0 +1,1 @@
+codeql database create ./ssa_database --language=cpp --command="g++ main.cpp -o main"
