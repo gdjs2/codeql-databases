@@ -1,0 +1,1326 @@
+[T 16:04:55 25188] CodeQL CLI version 2.13.0
+[T 16:04:55 25188] Initializing tracer.
+[T 16:04:55 25188] Initialising tags...
+[T 16:04:55 25188] ID set to 0000000000006264_0000000000000001 (parent root)
+[T 16:04:55 25188] Initializing tracer.
+[T 16:04:55 25188] Initialising tags...
+[T 16:04:55 25188] ID set to 0000000000006264_0000000000000002 (parent root)
+[T 16:04:55 25188] Warning: SEMMLE_EXEC and SEMMLE_EXECP not set. Falling back to path lookup on argv[0].
+[T 16:04:55 25188] ==== Candidate to intercept: /usr/local/Caskroom/codeql/2.13.0/codeql/tools/osx64/runner-osx (canonical: /usr/local/Caskroom/codeql/2.13.0/codeql/tools/osx64/runner-osx) ====
+[T 16:04:55 25188] Executing the following tracer actions:
+[T 16:04:55 25188] Tracer actions:
+[T 16:04:55 25188] pre_invocations(0)
+[T 16:04:55 25188] post_invocations(0)
+[T 16:04:55 25188] trace_languages(1): [cpp]
+[T 16:04:55 25189] Attempting to switch stdout/stderr to 3...
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/usr/bin/g++.semmle.00006264.39E745D0.slice.x86_64: replacing existing signature
+[T 16:04:56 25188] Initializing tracer.
+[T 16:04:56 25188] Initialising tags...
+[T 16:04:56 25188] ID set to 0000000000006264_0000000000000003 (parent 0000000000006264_0000000000000002)
+[T 16:04:56 25188] ==== Candidate to intercept: /usr/bin/g++ (canonical: /usr/bin/g++) ====
+[T 16:04:56 25188] Lua: === Intercepted call to /usr/bin/g++ ===
+[T 16:04:56 25188] Executing the following tracer actions:
+[T 16:04:56 25188] Tracer actions:
+[T 16:04:56 25188] pre_invocations(0)
+[T 16:04:56 25188] post_invocations(1)
+[T 16:04:56 25188] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /usr/bin/g++, simple_1.cpp, -o, simple_1]
+[T 16:04:56 25188] trace_languages(1): [cpp]
+[T 16:04:56 25193] Attempting to switch stdout/stderr to 3...
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/g++.semmle.00006268.39E88DF0.slice.x86_64: replacing existing signature
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/g++.semmle.00006268.39E88DF0.slice.arm64: replacing existing signature
+[T 16:04:57 25192] Initializing tracer.
+[T 16:04:57 25192] Initialising tags...
+[T 16:04:57 25192] ID set to 0000000000006268_0000000000000001 (parent 0000000000006264_0000000000000003)
+[T 16:04:57 25192] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/g++ (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:04:57 25192] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:04:57 25192] Executing the following tracer actions:
+[T 16:04:57 25192] Tracer actions:
+[T 16:04:57 25192] pre_invocations(0)
+[T 16:04:57 25192] post_invocations(1)
+[T 16:04:57 25192] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, simple_1.cpp, -o, simple_1]
+[T 16:04:57 25192] trace_languages(1): [cpp]
+[T 16:04:57 25200] Attempting to switch stdout/stderr to 3...
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/usr/bin/xcrun.semmle.0000626F.17AA4DC8.slice.x86_64: replacing existing signature
+[T 16:04:57 25199] Initializing tracer.
+[T 16:04:57 25199] Initialising tags...
+[T 16:04:57 25199] ID set to 000000000000626F_0000000000000001 (parent 0000000000006268_0000000000000001)
+[T 16:04:57 25199] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:04:57 25199] Executing the following tracer actions:
+[T 16:04:57 25199] Tracer actions:
+[T 16:04:57 25199] pre_invocations(0)
+[T 16:04:57 25199] post_invocations(0)
+[T 16:04:57 25199] trace_languages(1): [cpp]
+[T 16:04:57 25204] Attempting to switch stdout/stderr to 3...
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/clang++.semmle.0000626F.2E918628.slice.x86_64
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/clang++.semmle.0000626F.2E918628.slice.x86_64: replacing existing signature
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/clang++.semmle.0000626F.2E918628.slice.arm64
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/clang++.semmle.0000626F.2E918628.slice.arm64: replacing existing signature
+[T 16:05:07 25199] Initializing tracer.
+[T 16:05:07 25199] Initialising tags...
+[T 16:05:07 25199] ID set to 000000000000626F_0000000000000002 (parent 000000000000626F_0000000000000001)
+[T 16:05:07 25199] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang++ (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:07 25199] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:07 25199] Executing the following tracer actions:
+[T 16:05:07 25199] Tracer actions:
+[T 16:05:07 25199] pre_invocations(0)
+[T 16:05:07 25199] post_invocations(1)
+[T 16:05:07 25199] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, simple_1.cpp, -o, simple_1]
+[T 16:05:07 25199] trace_languages(1): [cpp]
+[T 16:05:07 25263] Initializing tracer.
+[T 16:05:07 25263] Initialising tags...
+[T 16:05:07 25263] ID set to 00000000000062AF_0000000000000001 (parent 000000000000626F_0000000000000002)
+[T 16:05:07 25263] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:07 25263] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:07 25263] Executing the following tracer actions:
+[T 16:05:07 25263] Tracer actions:
+[T 16:05:07 25263] pre_invocations(0)
+[T 16:05:07 25263] post_invocations(1)
+[T 16:05:07 25263] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, simple_1.cpp, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -I/usr/local/include, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -no-opaque-pointers, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /var/folders/89/586r7k990790m5mqzwf8slcw0000gn/T/simple_1-968b7e.o, -x, c++, simple_1.cpp]
+[T 16:05:07 25263] trace_languages(1): [cpp]
+[T 16:05:07 25265] Attempting to switch stdout/stderr to 4...
+[T 16:05:07 25266] Attempting to switch stdout/stderr to 4...
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor.semmle.000062B1.20EDC388.slice.arm64: replacing existing signature
+[T 16:05:08 25265] Initializing tracer.
+[T 16:05:08 25265] Initialising tags...
+[T 16:05:08 25265] ID set to 00000000000062B1_0000000000000001 (parent 00000000000062AF_0000000000000001)
+[E 16:05:08 25265] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:08 25265] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:08 25265] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --mimic /library/developer/commandlinetools/usr/bin/clang -cc1 -triple x86_64-apple-macosx13.0.0 -Wundef-prefix=TARGET_OS_ -Wdeprecated-objc-isa-usage -Werror=deprecated-objc-isa-usage -Werror=implicit-function-declaration -emit-obj -mrelax-all --mrelax-relocations -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name simple_1.cpp -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -target-sdk-version=13.3 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -tune-cpu generic -mllvm -treat-scalable-fixed-error-as-warning -debugger-tuning=lldb -target-linker-version 857.1 -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include '-stdlib=libc++' -internal-isystem '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1' -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -Wno-reorder-init-list -Wno-implicit-int-float-conversion -Wno-c99-designator -Wno-final-dtor-non-final-class -Wno-extra-semi-stmt -Wno-misleading-indentation -Wno-quoted-include-in-framework-header -Wno-implicit-fallthrough -Wno-enum-enum-conversion -Wno-enum-float-conversion -Wno-elaborated-enum-base -Wno-reserved-identifier -Wno-gnu-folding-constant -fdeprecated-macro -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code -ferror-limit 19 -stack-protector 1 -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -no-opaque-pointers -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon '-clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation' -fno-odr-hash-protocols '-clang-vendor-feature=+enableAggressiveVLAFolding' '-clang-vendor-feature=+revert09abecef7bbf' '-clang-vendor-feature=+thisNoAlignAttr' '-clang-vendor-feature=+thisNoNullAttr' -mllvm -disable-aligned-alloc-awareness=1 -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o /var/folders/89/586r7k990790m5mqzwf8slcw0000gn/T/simple_1-968b7e.o -x 'c++' simple_1.cpp
+[T 16:05:08 25271] Initializing tracer.
+[T 16:05:08 25271] Initialising tags...
+[T 16:05:08 25271] ID set to 00000000000062B7_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25271] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25271] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25271] Executing the following tracer actions:
+[T 16:05:08 25271] Tracer actions:
+[T 16:05:08 25271] pre_invocations(0)
+[T 16:05:08 25271] post_invocations(1)
+[T 16:05:08 25271] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --version]
+[T 16:05:08 25271] trace_languages(1): [cpp]
+[T 16:05:08 25273] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25273] Initializing tracer.
+[T 16:05:08 25273] Initialising tags...
+[T 16:05:08 25273] ID set to 00000000000062B9_0000000000000001 (parent 00000000000062B7_0000000000000001)
+[E 16:05:08 25273] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25271] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25274] Initializing tracer.
+[T 16:05:08 25274] Initialising tags...
+[T 16:05:08 25274] ID set to 00000000000062BA_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25274] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25274] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25274] Executing the following tracer actions:
+[T 16:05:08 25274] Tracer actions:
+[T 16:05:08 25274] pre_invocations(0)
+[T 16:05:08 25274] post_invocations(1)
+[T 16:05:08 25274] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --help]
+[T 16:05:08 25274] trace_languages(1): [cpp]
+[T 16:05:08 25276] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25276] Initializing tracer.
+[T 16:05:08 25276] Initialising tags...
+[T 16:05:08 25276] ID set to 00000000000062BC_0000000000000001 (parent 00000000000062BA_0000000000000001)
+[E 16:05:08 25276] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25274] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25277] Initializing tracer.
+[T 16:05:08 25277] Initialising tags...
+[T 16:05:08 25277] ID set to 00000000000062BD_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25277] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25277] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25277] Executing the following tracer actions:
+[T 16:05:08 25277] Tracer actions:
+[T 16:05:08 25277] pre_invocations(0)
+[T 16:05:08 25277] post_invocations(1)
+[T 16:05:08 25277] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -nostdsysteminc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25265_560270.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25265_560186.c]
+[T 16:05:08 25277] trace_languages(1): [cpp]
+[T 16:05:08 25279] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25279] Initializing tracer.
+[T 16:05:08 25279] Initialising tags...
+[T 16:05:08 25279] ID set to 00000000000062BF_0000000000000001 (parent 00000000000062BD_0000000000000001)
+[E 16:05:08 25279] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25277] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+Warning: Unrecognised command line argument --mrelax-relocations
+Warning: Unrecognised command line argument -clear-ast-before-backend
+Warning: Unrecognised command line argument -discard-value-names
+Warning: Unrecognised command line argument -target-sdk-version=13.3
+Warning: Unrecognised command line argument -tune-cpu
+Warning: Unrecognised command line argument -mllvm
+Warning: Unrecognised command line argument -treat-scalable-fixed-error-as-warning
+Warning: Unrecognised command line argument -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation
+Warning: Unrecognised command line argument -clang-vendor-feature=+enableAggressiveVLAFolding
+Warning: Unrecognised command line argument -clang-vendor-feature=+revert09abecef7bbf
+Warning: Unrecognised command line argument -clang-vendor-feature=+thisNoAlignAttr
+Warning: Unrecognised command line argument -clang-vendor-feature=+thisNoNullAttr
+Warning: Unrecognised command line argument -mllvm
+Warning: Unrecognised command line argument -disable-aligned-alloc-awareness=1
+[E 16:05:08 25265] Checking whether C compilation already happened.
+[E 16:05:08 25265] Checking for tag c-compilation-happened
+[E 16:05:08 25265] Checking CODEQL_TRACER_DB_ID 00000000000062AF_0000000000000001
+[E 16:05:08 25265] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Unlocking DB
+[E 16:05:08 25265] Unlocked DB
+[E 16:05:08 25265] Looks like C compilation didn't already happen.
+[E 16:05:08 25265] Checking whether C compilation has been attempted.
+[E 16:05:08 25265] Checking for tag c-compilation-attempted
+[E 16:05:08 25265] Checking CODEQL_TRACER_DB_ID 00000000000062AF_0000000000000001
+[E 16:05:08 25265] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Unlocking DB
+[E 16:05:08 25265] Unlocked DB
+[E 16:05:08 25265] Marking C compilation as attempted.
+[E 16:05:08 25265] Setting tag c-compilation-attempted
+[E 16:05:08 25265] Starting from CODEQL_TRACER_DB_ID 00000000000062AF_0000000000000001
+[E 16:05:08 25265] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25265] Set tag for 00000000000062AF_0000000000000001
+[E 16:05:08 25265] Set tag for 000000000000626F_0000000000000002
+[E 16:05:08 25265] Set tag for 000000000000626F_0000000000000001
+[E 16:05:08 25265] Set tag for 0000000000006268_0000000000000001
+[E 16:05:08 25265] Set tag for 0000000000006264_0000000000000003
+[E 16:05:08 25265] Set tag for 0000000000006264_0000000000000002
+[E 16:05:08 25265] Set tag for root
+[E 16:05:08 25265] Unlocking DB
+[E 16:05:08 25265] Unlocked DB
+[E 16:05:08 25265] Warning[extractor-c++]: In canonicalise_path: realpath failed
+Excluded generic because it is an object
+[T 16:05:08 25280] Initializing tracer.
+[T 16:05:08 25280] Initialising tags...
+[T 16:05:08 25280] ID set to 00000000000062C0_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25280] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25280] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25280] Executing the following tracer actions:
+[T 16:05:08 25280] Tracer actions:
+[T 16:05:08 25280] pre_invocations(0)
+[T 16:05:08 25280] post_invocations(1)
+[T 16:05:08 25280] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -v, -fsyntax-only, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25265_619016]
+[T 16:05:08 25280] trace_languages(1): [cpp]
+[T 16:05:08 25282] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25282] Initializing tracer.
+[T 16:05:08 25282] Initialising tags...
+[T 16:05:08 25282] ID set to 00000000000062C2_0000000000000001 (parent 00000000000062C0_0000000000000001)
+[E 16:05:08 25282] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25280] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25283] Initializing tracer.
+[T 16:05:08 25283] Initialising tags...
+[T 16:05:08 25283] ID set to 00000000000062C3_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25283] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25283] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25283] Executing the following tracer actions:
+[T 16:05:08 25283] Tracer actions:
+[T 16:05:08 25283] pre_invocations(0)
+[T 16:05:08 25283] post_invocations(1)
+[T 16:05:08 25283] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -E, -dM, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_5_25265_677684]
+[T 16:05:08 25283] trace_languages(1): [cpp]
+[T 16:05:08 25285] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25285] Initializing tracer.
+[T 16:05:08 25285] Initialising tags...
+[T 16:05:08 25285] ID set to 00000000000062C5_0000000000000001 (parent 00000000000062C3_0000000000000001)
+[E 16:05:08 25285] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25283] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+Warning: Apple version 140003 of clang is too new; mapping it to 14.0.0.
+[T 16:05:08 25286] Initializing tracer.
+[T 16:05:08 25286] Initialising tags...
+[T 16:05:08 25286] ID set to 00000000000062C6_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25286] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25286] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25286] Executing the following tracer actions:
+[T 16:05:08 25286] Tracer actions:
+[T 16:05:08 25286] pre_invocations(0)
+[T 16:05:08 25286] post_invocations(1)
+[T 16:05:08 25286] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -E, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_6_25265_724542]
+[T 16:05:08 25286] trace_languages(1): [cpp]
+[T 16:05:08 25288] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25288] Initializing tracer.
+[T 16:05:08 25288] Initialising tags...
+[T 16:05:08 25288] ID set to 00000000000062C8_0000000000000001 (parent 00000000000062C6_0000000000000001)
+[E 16:05:08 25288] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25286] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25289] Initializing tracer.
+[T 16:05:08 25289] Initialising tags...
+[T 16:05:08 25289] ID set to 00000000000062C9_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25289] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25289] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25289] Executing the following tracer actions:
+[T 16:05:08 25289] Tracer actions:
+[T 16:05:08 25289] pre_invocations(0)
+[T 16:05:08 25289] post_invocations(1)
+[T 16:05:08 25289] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++-header, -ferror-limit, 0, -emit-pch, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_7_25265_770945.h.gch, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_7_25265_770945.h]
+[T 16:05:08 25289] trace_languages(1): [cpp]
+[T 16:05:08 25291] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25291] Initializing tracer.
+[T 16:05:08 25291] Initialising tags...
+[T 16:05:08 25291] ID set to 00000000000062CB_0000000000000001 (parent 00000000000062C9_0000000000000001)
+[E 16:05:08 25291] Mimicry classification suppression detected; exiting.
+[T 16:05:08 25289] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25292] Initializing tracer.
+[T 16:05:08 25292] Initialising tags...
+[T 16:05:08 25292] ID set to 00000000000062CC_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25292] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25292] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25292] Executing the following tracer actions:
+[T 16:05:08 25292] Tracer actions:
+[T 16:05:08 25292] pre_invocations(0)
+[T 16:05:08 25292] post_invocations(1)
+[T 16:05:08 25292] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -fno-color-diagnostics, --help]
+[T 16:05:08 25292] trace_languages(1): [cpp]
+[T 16:05:08 25294] Attempting to switch stdout/stderr to 7...
+[T 16:05:08 25294] Initializing tracer.
+[T 16:05:08 25294] Initialising tags...
+[T 16:05:08 25294] ID set to 00000000000062CE_0000000000000001 (parent 00000000000062CC_0000000000000001)
+[E 16:05:08 25294] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:08 25294] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:08 25294] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --mimic /library/developer/commandlinetools/usr/bin/clang -cc1 -triple x86_64-apple-macosx13.0.0 -mrelax-all -mrelocation-model pic -pic-level 2 -mframe-pointer=all -fno-strict-return -ffp-contract=on -fno-rounding-math -funwind-tables=2 -fvisibility-inlines-hidden-static-local-var -target-cpu penryn -target-linker-version 857.1 -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code -resource-dir /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk '-stdlib=libc++' -internal-isystem '/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1' -internal-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include -internal-isystem /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include -internal-externc-isystem /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -internal-externc-isystem /Library/Developer/CommandLineTools/usr/include -fdeprecated-macro -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code -fstack-check -mdarwin-stkchk-strong-link -fblocks -fencode-extended-block-signature -fregister-global-dtors-with-atexit -fgnuc-version=4.2.1 -fno-cxx-modules -fcxx-exceptions -fexceptions -fmax-type-align=16 -fcommon -fno-odr-hash-protocols -x 'c++' -fno-color-diagnostics --help
+[E 16:05:08 25294] Warning[extractor-c++]: In canonicalise_path: realpath failed
+[E 16:05:08 25294] Checking whether C compilation already happened.
+[E 16:05:08 25294] Checking for tag c-compilation-happened
+[E 16:05:08 25294] Checking CODEQL_TRACER_DB_ID 00000000000062CC_0000000000000001
+[E 16:05:08 25294] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Unlocking DB
+[E 16:05:08 25294] Unlocked DB
+[E 16:05:08 25294] Looks like C compilation didn't already happen.
+[E 16:05:08 25294] Checking whether C compilation has been attempted.
+[E 16:05:08 25294] Checking for tag c-compilation-attempted
+[E 16:05:08 25294] Checking CODEQL_TRACER_DB_ID 00000000000062CC_0000000000000001
+[E 16:05:08 25294] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Unlocking DB
+[E 16:05:08 25294] Unlocked DB
+[E 16:05:08 25294] Marking C compilation as attempted.
+[E 16:05:08 25294] Setting tag c-compilation-attempted
+[E 16:05:08 25294] Starting from CODEQL_TRACER_DB_ID 00000000000062CC_0000000000000001
+[E 16:05:08 25294] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:08 25294] Set tag for 00000000000062CC_0000000000000001
+[E 16:05:08 25294] Set tag for 00000000000062B1_0000000000000001
+[E 16:05:08 25294] Set tag for 00000000000062AF_0000000000000001
+[E 16:05:08 25294] Set tag for 000000000000626F_0000000000000002
+[E 16:05:08 25294] Set tag for 000000000000626F_0000000000000001
+[E 16:05:08 25294] Set tag for 0000000000006268_0000000000000001
+[E 16:05:08 25294] Set tag for 0000000000006264_0000000000000003
+[E 16:05:08 25294] Set tag for 0000000000006264_0000000000000002
+[E 16:05:08 25294] Set tag for root
+[E 16:05:08 25294] Unlocking DB
+[E 16:05:08 25294] Unlocked DB
+[E 16:05:08 25294] 0 file groups; exiting.
+[T 16:05:08 25292] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:08 25295] Initializing tracer.
+[T 16:05:08 25295] Initialising tags...
+[T 16:05:08 25295] ID set to 00000000000062CF_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:08 25295] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:08 25295] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:08 25295] Executing the following tracer actions:
+[T 16:05:08 25295] Tracer actions:
+[T 16:05:08 25295] pre_invocations(0)
+[T 16:05:08 25295] post_invocations(1)
+[T 16:05:08 25295] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -ferror-limit, 0, -emit-pch, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_7_25265_770945.h.gch, -ast-dump, -]
+[T 16:05:08 25295] trace_languages(1): [cpp]
+[T 16:05:09 25298] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25298] Initializing tracer.
+[T 16:05:09 25298] Initialising tags...
+[T 16:05:09 25298] ID set to 00000000000062D2_0000000000000001 (parent 00000000000062CF_0000000000000001)
+[E 16:05:09 25298] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25295] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16, __fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type 'unsigned char (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, unsigned char) throw()'
+Warning: Could not parse function type 'unsigned short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, int, unsigned short) throw()'
+Warning: Could not parse function type 'unsigned int (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int, unsigned int, int) throw()'
+Warning: Could not parse function type 'unsigned char (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type 'unsigned char (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, unsigned char) throw()'
+Warning: Could not parse function type 'unsigned short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, int, unsigned short) throw()'
+Warning: Could not parse function type 'unsigned int (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int, unsigned int) throw()'
+Warning: Could not parse function type 'unsigned char (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 *, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '_Float16 (_Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (unsigned char, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (unsigned short, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (unsigned int, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (unsigned char, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type 'void (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 *, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type 'int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(int)))) int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(int)))) int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(int)))) int, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(2 * sizeof(double)))) double, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(double)))) double, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(double)))) double, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(int)))) int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(int)))) int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(int)))) int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(int)))) int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(int)))) int (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(int)))) int, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(double)))) double (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(double)))) double, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(double)))) double (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(double)))) double, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(double)))) double (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(double)))) double, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(float)))) float (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(float)))) float, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(float)))) float (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(float)))) float, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(float)))) float (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(float)))) float, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(long long)))) long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(long long)))) long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(long long)))) long long, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(unsigned int)))) unsigned int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned int)))) unsigned int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(unsigned int)))) unsigned int, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(unsigned long long)))) unsigned long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(unsigned long long)))) unsigned long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned long long)))) unsigned long long, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned short)))) unsigned short, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(unsigned short)))) unsigned short, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(unsigned short)))) unsigned short, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(short)))) short (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(short)))) short, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(short)))) short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(short)))) short, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(short)))) short (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(short)))) short, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(float)))) float, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(float)))) float, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(float)))) float, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(2 * sizeof(long long)))) long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(long long)))) long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(long long)))) long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(double)))) double, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(double)))) double (__attribute__((__vector_size__(2 * sizeof(double)))) double, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(double)))) double, unsigned char, int) throw()'
+Warning: Could not parse function type 'int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type 'long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(float)))) float (__attribute__((__vector_size__(4 * sizeof(float)))) float, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(float)))) float, unsigned char, int) throw()'
+Warning: Could not parse function type 'unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type 'unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, long long, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(float)))) float, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(int)))) int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(int)))) int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(int)))) int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(int)))) int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(int)))) int (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(int)))) int, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(long long)))) long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(long long)))) long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(long long)))) long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(long long)))) long long, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(unsigned int)))) unsigned int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned int)))) unsigned int, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(unsigned int)))) unsigned int (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(unsigned int)))) unsigned int, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(2 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(2 * sizeof(unsigned long long)))) unsigned long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(4 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(4 * sizeof(unsigned long long)))) unsigned long long, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned long long)))) unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned long long)))) unsigned long long, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(unsigned short)))) unsigned short, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(unsigned short)))) unsigned short, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(unsigned short)))) unsigned short (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(unsigned short)))) unsigned short, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(short)))) short (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(short)))) short, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(short)))) short (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(short)))) short, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(short)))) short (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(short)))) short, unsigned int, int) throw()'
+Warning: Could not parse function type 'int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type 'long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type 'unsigned int (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type 'unsigned long long (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(unsigned int)))) unsigned int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(unsigned int)))) unsigned int, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(unsigned int)))) unsigned int, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(2 * sizeof(unsigned long long)))) unsigned long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(4 * sizeof(unsigned long long)))) unsigned long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(unsigned long long)))) unsigned long long, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned long long, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(unsigned short)))) unsigned short, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(unsigned short)))) unsigned short, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(unsigned short)))) unsigned short, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(short)))) short, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(short)))) short, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, unsigned short) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(short)))) short, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(16 * sizeof(_Float16)))) _Float16) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(32 * sizeof(_Float16)))) _Float16, unsigned int, int) throw()'
+Warning: Could not parse function type '__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16 (__attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, __attribute__((__vector_size__(8 * sizeof(_Float16)))) _Float16, unsigned char, int) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16, __fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Could not parse function type '__fp16 (__fp16) throw()'
+Warning: Failed to find information about possible built-in _Block_object_assign
+Warning: Failed to find information about possible built-in _Block_object_dispose
+Warning: Failed to find information about possible built-in _Exit
+Warning: Failed to find information about possible built-in __VA_OPT__
+Warning: Failed to find information about possible built-in __addressof
+Warning: Failed to find information about possible built-in __blocks__
+Warning: Failed to find information about possible built-in __builtin___fprintf_chk
+Warning: Failed to find information about possible built-in __builtin___vfprintf_chk
+Warning: Failed to find information about possible built-in __builtin_fprintf
+Warning: Failed to find information about possible built-in __cospi
+Warning: Failed to find information about possible built-in __cospif
+Warning: Failed to find information about possible built-in __exp10
+Warning: Failed to find information about possible built-in __exp10f
+Warning: Failed to find information about possible built-in __finite
+Warning: Failed to find information about possible built-in __finitef
+Warning: Failed to find information about possible built-in __finitel
+Warning: Failed to find information about possible built-in __sigsetjmp
+Warning: Failed to find information about possible built-in __sinpi
+Warning: Failed to find information about possible built-in __sinpif
+Warning: Failed to find information about possible built-in __tanpi
+Warning: Failed to find information about possible built-in __tanpif
+Warning: Failed to find information about possible built-in _exit
+Warning: Failed to find information about possible built-in _longjmp
+Warning: Failed to find information about possible built-in _setjmp
+Warning: Ignored 24 possible built-ins
+Warning: Throwing away all 2870 builtins because of 194 bad parses.
+[T 16:05:09 25299] Initializing tracer.
+[T 16:05:09 25299] Initialising tags...
+[T 16:05:09 25299] ID set to 00000000000062D3_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25299] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25299] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25299] Executing the following tracer actions:
+[T 16:05:09 25299] Tracer actions:
+[T 16:05:09 25299] pre_invocations(0)
+[T 16:05:09 25299] post_invocations(1)
+[T 16:05:09 25299] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_9_25265_219864.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_8_25265_219782.c]
+[T 16:05:09 25299] trace_languages(1): [cpp]
+[T 16:05:09 25301] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25301] Initializing tracer.
+[T 16:05:09 25301] Initialising tags...
+[T 16:05:09 25301] ID set to 00000000000062D5_0000000000000001 (parent 00000000000062D3_0000000000000001)
+[E 16:05:09 25301] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25299] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25302] Initializing tracer.
+[T 16:05:09 25302] Initialising tags...
+[T 16:05:09 25302] ID set to 00000000000062D6_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25302] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25302] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25302] Executing the following tracer actions:
+[T 16:05:09 25302] Tracer actions:
+[T 16:05:09 25302] pre_invocations(0)
+[T 16:05:09 25302] post_invocations(1)
+[T 16:05:09 25302] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_11_25265_273403.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_10_25265_273327.c]
+[T 16:05:09 25302] trace_languages(1): [cpp]
+[T 16:05:09 25304] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25304] Initializing tracer.
+[T 16:05:09 25304] Initialising tags...
+[T 16:05:09 25304] ID set to 00000000000062D8_0000000000000001 (parent 00000000000062D6_0000000000000001)
+[E 16:05:09 25304] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25302] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25305] Initializing tracer.
+[T 16:05:09 25305] Initialising tags...
+[T 16:05:09 25305] ID set to 00000000000062D9_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25305] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25305] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25305] Executing the following tracer actions:
+[T 16:05:09 25305] Tracer actions:
+[T 16:05:09 25305] pre_invocations(0)
+[T 16:05:09 25305] post_invocations(1)
+[T 16:05:09 25305] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_13_25265_325066.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_12_25265_324988.c]
+[T 16:05:09 25305] trace_languages(1): [cpp]
+[T 16:05:09 25307] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25307] Initializing tracer.
+[T 16:05:09 25307] Initialising tags...
+[T 16:05:09 25307] ID set to 00000000000062DB_0000000000000001 (parent 00000000000062D9_0000000000000001)
+[E 16:05:09 25307] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25305] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25308] Initializing tracer.
+[T 16:05:09 25308] Initialising tags...
+[T 16:05:09 25308] ID set to 00000000000062DC_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25308] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25308] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25308] Executing the following tracer actions:
+[T 16:05:09 25308] Tracer actions:
+[T 16:05:09 25308] pre_invocations(0)
+[T 16:05:09 25308] post_invocations(1)
+[T 16:05:09 25308] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_15_25265_378819.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_14_25265_378738.c]
+[T 16:05:09 25308] trace_languages(1): [cpp]
+[T 16:05:09 25310] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25310] Initializing tracer.
+[T 16:05:09 25310] Initialising tags...
+[T 16:05:09 25310] ID set to 00000000000062DE_0000000000000001 (parent 00000000000062DC_0000000000000001)
+[E 16:05:09 25310] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25308] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25311] Initializing tracer.
+[T 16:05:09 25311] Initialising tags...
+[T 16:05:09 25311] ID set to 00000000000062DF_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25311] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25311] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25311] Executing the following tracer actions:
+[T 16:05:09 25311] Tracer actions:
+[T 16:05:09 25311] pre_invocations(0)
+[T 16:05:09 25311] post_invocations(1)
+[T 16:05:09 25311] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_17_25265_433137.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_16_25265_433060.c]
+[T 16:05:09 25311] trace_languages(1): [cpp]
+[T 16:05:09 25313] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25313] Initializing tracer.
+[T 16:05:09 25313] Initialising tags...
+[T 16:05:09 25313] ID set to 00000000000062E1_0000000000000001 (parent 00000000000062DF_0000000000000001)
+[E 16:05:09 25313] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25311] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25314] Initializing tracer.
+[T 16:05:09 25314] Initialising tags...
+[T 16:05:09 25314] ID set to 00000000000062E2_0000000000000001 (parent 00000000000062B1_0000000000000001)
+[T 16:05:09 25314] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:09 25314] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:09 25314] Executing the following tracer actions:
+[T 16:05:09 25314] Tracer actions:
+[T 16:05:09 25314] pre_invocations(0)
+[T 16:05:09 25314] post_invocations(1)
+[T 16:05:09 25314] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -mrelax-all, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/local/include, -internal-isystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include, -internal-externc-isystem, /Library/Developer/CommandLineTools/usr/include, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -fno-odr-hash-protocols, -x, c++, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_19_25265_482959.o, -emit-obj, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_18_25265_482883.c]
+[T 16:05:09 25314] trace_languages(1): [cpp]
+[T 16:05:09 25316] Attempting to switch stdout/stderr to 7...
+[T 16:05:09 25316] Initializing tracer.
+[T 16:05:09 25316] Initialising tags...
+[T 16:05:09 25316] ID set to 00000000000062E4_0000000000000001 (parent 00000000000062E2_0000000000000001)
+[E 16:05:09 25316] Mimicry classification suppression detected; exiting.
+[T 16:05:09 25314] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[E 16:05:09 25265] Processed command line: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --trapfolder /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp --src_archive /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/src --mimic_config /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/compiler_mimic_cache/ed428f856d6a --object_filename /var/folders/89/586r7k990790m5mqzwf8slcw0000gn/T/simple_1-968b7e.o -w --error_limit 1000 --disable_system_macros --variadic_macros '--g++' --clang_version 140000 --gnu_version 40801 --has_feature_vector 111111100000011100000000000000000000100000000000000000010000000000011 --clang --target linux_x86_64 -D_LP64=1 -D__APPLE_CC__=6000 -D__APPLE__=1 -D__ATOMIC_ACQUIRE=2 -D__ATOMIC_ACQ_REL=4 -D__ATOMIC_CONSUME=1 -D__ATOMIC_RELAXED=0 -D__ATOMIC_RELEASE=3 -D__ATOMIC_SEQ_CST=5 -D__BIGGEST_ALIGNMENT__=16 -D__BITINT_MAXWIDTH__=128 -D__BLOCKS__=1 -D__BOOL_WIDTH__=8 -D__BYTE_ORDER__=__ORDER_LITTLE_ENDIAN__ -D__CHAR_BIT__=8 -D__CLANG_ATOMIC_BOOL_LOCK_FREE=2 -D__CLANG_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__CLANG_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__CLANG_ATOMIC_CHAR_LOCK_FREE=2 -D__CLANG_ATOMIC_INT_LOCK_FREE=2 -D__CLANG_ATOMIC_LLONG_LOCK_FREE=2 -D__CLANG_ATOMIC_LONG_LOCK_FREE=2 -D__CLANG_ATOMIC_POINTER_LOCK_FREE=2 -D__CLANG_ATOMIC_SHORT_LOCK_FREE=2 -D__CLANG_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__CONSTANT_CFSTRINGS__=1 -D__DBL_DECIMAL_DIG__=17 -D__DBL_DENORM_MIN__=4.9406564584124654e-324 -D__DBL_DIG__=15 -D__DBL_EPSILON__=2.2204460492503131e-16 -D__DBL_HAS_DENORM__=1 -D__DBL_HAS_INFINITY__=1 -D__DBL_HAS_QUIET_NAN__=1 -D__DBL_MANT_DIG__=53 -D__DBL_MAX_10_EXP__=308 -D__DBL_MAX_EXP__=1024 '-D__DBL_MAX__=1.7976931348623157e+308' '-D__DBL_MIN_10_EXP__=(-307)' '-D__DBL_MIN_EXP__=(-1021)' -D__DBL_MIN__=2.2250738585072014e-308 -D__DECIMAL_DIG__=__LDBL_DECIMAL_DIG__ -D__DEPRECATED=1 -D__DYNAMIC__=1 -D__ENVIRONMENT_MAC_OS_X_VERSION_MIN_REQUIRED__=130000 -D__ENVIRONMENT_OS_VERSION_MIN_REQUIRED__=130000 -D__EXCEPTIONS=1 -D__FINITE_MATH_ONLY__=0 -D__FLT16_DECIMAL_DIG__=5 -D__FLT16_DENORM_MIN__=5.9604644775390625e-8F16 -D__FLT16_DIG__=3 -D__FLT16_EPSILON__=9.765625e-4F16 -D__FLT16_HAS_DENORM__=1 -D__FLT16_HAS_INFINITY__=1 -D__FLT16_HAS_QUIET_NAN__=1 -D__FLT16_MANT_DIG__=11 -D__FLT16_MAX_10_EXP__=4 -D__FLT16_MAX_EXP__=16 '-D__FLT16_MAX__=6.5504e+4F16' '-D__FLT16_MIN_10_EXP__=(-4)' '-D__FLT16_MIN_EXP__=(-13)' -D__FLT16_MIN__=6.103515625e-5F16 -D__FLT_DECIMAL_DIG__=9 -D__FLT_DENORM_MIN__=1.40129846e-45F -D__FLT_DIG__=6 -D__FLT_EPSILON__=1.19209290e-7F -D__FLT_HAS_DENORM__=1 -D__FLT_HAS_INFINITY__=1 -D__FLT_HAS_QUIET_NAN__=1 -D__FLT_MANT_DIG__=24 -D__FLT_MAX_10_EXP__=38 -D__FLT_MAX_EXP__=128 '-D__FLT_MAX__=3.40282347e+38F' '-D__FLT_MIN_10_EXP__=(-37)' '-D__FLT_MIN_EXP__=(-125)' -D__FLT_MIN__=1.17549435e-38F -D__FLT_RADIX__=2 -D__FXSR__=1 -D__GCC_ASM_FLAG_OUTPUTS__=1 -D__GCC_ATOMIC_BOOL_LOCK_FREE=2 -D__GCC_ATOMIC_CHAR16_T_LOCK_FREE=2 -D__GCC_ATOMIC_CHAR32_T_LOCK_FREE=2 -D__GCC_ATOMIC_CHAR_LOCK_FREE=2 -D__GCC_ATOMIC_INT_LOCK_FREE=2 -D__GCC_ATOMIC_LLONG_LOCK_FREE=2 -D__GCC_ATOMIC_LONG_LOCK_FREE=2 -D__GCC_ATOMIC_POINTER_LOCK_FREE=2 -D__GCC_ATOMIC_SHORT_LOCK_FREE=2 -D__GCC_ATOMIC_TEST_AND_SET_TRUEVAL=1 -D__GCC_ATOMIC_WCHAR_T_LOCK_FREE=2 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_1=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_16=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_2=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_4=1 -D__GCC_HAVE_SYNC_COMPARE_AND_SWAP_8=1 -D__GLIBCXX_BITSIZE_INT_N_0=128 -D__GLIBCXX_TYPE_INT_N_0=__int128 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -D__GNUC__=4 -D__GNUG__=4 -D__GXX_ABI_VERSION=1002 -D__GXX_RTTI=1 -D__GXX_WEAK__=1 -D__INT16_C_SUFFIX__= '-D__INT16_FMTd__="hd"' '-D__INT16_FMTi__="hi"' -D__INT16_MAX__=32767 -D__INT16_TYPE__=short -D__INT32_C_SUFFIX__= '-D__INT32_FMTd__="d"' '-D__INT32_FMTi__="i"' -D__INT32_MAX__=2147483647 -D__INT32_TYPE__=int -D__INT64_C_SUFFIX__=LL '-D__INT64_FMTd__="lld"' '-D__INT64_FMTi__="lli"' -D__INT64_MAX__=9223372036854775807LL '-D__INT64_TYPE__=long long int' -D__INT8_C_SUFFIX__= '-D__INT8_FMTd__="hhd"' '-D__INT8_FMTi__="hhi"' -D__INT8_MAX__=127 '-D__INT8_TYPE__=signed char' -D__INTMAX_C_SUFFIX__=L '-D__INTMAX_FMTd__="ld"' '-D__INTMAX_FMTi__="li"' -D__INTMAX_MAX__=9223372036854775807L '-D__INTMAX_TYPE__=long int' -D__INTMAX_WIDTH__=64 '-D__INTPTR_FMTd__="ld"' '-D__INTPTR_FMTi__="li"' -D__INTPTR_MAX__=9223372036854775807L '-D__INTPTR_TYPE__=long int' -D__INTPTR_WIDTH__=64 '-D__INT_FAST16_FMTd__="hd"' '-D__INT_FAST16_FMTi__="hi"' -D__INT_FAST16_MAX__=32767 -D__INT_FAST16_TYPE__=short -D__INT_FAST16_WIDTH__=16 '-D__INT_FAST32_FMTd__="d"' '-D__INT_FAST32_FMTi__="i"' -D__INT_FAST32_MAX__=2147483647 -D__INT_FAST32_TYPE__=int -D__INT_FAST32_WIDTH__=32 '-D__INT_FAST64_FMTd__="lld"' '-D__INT_FAST64_FMTi__="lli"' -D__INT_FAST64_MAX__=9223372036854775807LL '-D__INT_FAST64_TYPE__=long long int' -D__INT_FAST64_WIDTH__=64 '-D__INT_FAST8_FMTd__="hhd"' '-D__INT_FAST8_FMTi__="hhi"' -D__INT_FAST8_MAX__=127 '-D__INT_FAST8_TYPE__=signed char' -D__INT_FAST8_WIDTH__=8 '-D__INT_LEAST16_FMTd__="hd"' '-D__INT_LEAST16_FMTi__="hi"' -D__INT_LEAST16_MAX__=32767 -D__INT_LEAST16_TYPE__=short -D__INT_LEAST16_WIDTH__=16 '-D__INT_LEAST32_FMTd__="d"' '-D__INT_LEAST32_FMTi__="i"' -D__INT_LEAST32_MAX__=2147483647 -D__INT_LEAST32_TYPE__=int -D__INT_LEAST32_WIDTH__=32 '-D__INT_LEAST64_FMTd__="lld"' '-D__INT_LEAST64_FMTi__="lli"' -D__INT_LEAST64_MAX__=9223372036854775807LL '-D__INT_LEAST64_TYPE__=long long int' -D__INT_LEAST64_WIDTH__=64 '-D__INT_LEAST8_FMTd__="hhd"' '-D__INT_LEAST8_FMTi__="hhi"' -D__INT_LEAST8_MAX__=127 '-D__INT_LEAST8_TYPE__=signed char' -D__INT_LEAST8_WIDTH__=8 -D__INT_MAX__=2147483647 -D__INT_WIDTH__=32 -D__LAHF_SAHF__=1 -D__LDBL_DECIMAL_DIG__=21 -D__LDBL_DENORM_MIN__=3.64519953188247460253e-4951L -D__LDBL_DIG__=18 -D__LDBL_EPSILON__=1.08420217248550443401e-19L -D__LDBL_HAS_DENORM__=1 -D__LDBL_HAS_INFINITY__=1 -D__LDBL_HAS_QUIET_NAN__=1 -D__LDBL_MANT_DIG__=64 -D__LDBL_MAX_10_EXP__=4932 -D__LDBL_MAX_EXP__=16384 '-D__LDBL_MAX__=1.18973149535723176502e+4932L' '-D__LDBL_MIN_10_EXP__=(-4931)' '-D__LDBL_MIN_EXP__=(-16381)' -D__LDBL_MIN__=3.36210314311209350626e-4932L -D__LITTLE_ENDIAN__=1 -D__LLONG_WIDTH__=64 -D__LONG_LONG_MAX__=9223372036854775807LL -D__LONG_MAX__=9223372036854775807L -D__LONG_WIDTH__=64 -D__LP64__=1 -D__MACH__=1 -D__MMX__=1 -D__NO_INLINE__=1 -D__NO_MATH_ERRNO__=1 -D__NO_MATH_INLINES=1 -D__OBJC_BOOL_IS_BOOL=0 -D__OPENCL_MEMORY_SCOPE_ALL_SVM_DEVICES=3 -D__OPENCL_MEMORY_SCOPE_DEVICE=2 -D__OPENCL_MEMORY_SCOPE_SUB_GROUP=4 -D__OPENCL_MEMORY_SCOPE_WORK_GROUP=1 -D__OPENCL_MEMORY_SCOPE_WORK_ITEM=0 -D__ORDER_BIG_ENDIAN__=4321 -D__ORDER_LITTLE_ENDIAN__=1234 -D__ORDER_PDP_ENDIAN__=3412 -D__PIC__=2 -D__POINTER_WIDTH__=64 -D__PRAGMA_REDEFINE_EXTNAME=1 '-D__PTRDIFF_FMTd__="ld"' '-D__PTRDIFF_FMTi__="li"' -D__PTRDIFF_MAX__=9223372036854775807L '-D__PTRDIFF_TYPE__=long int' -D__PTRDIFF_WIDTH__=64 -D__REGISTER_PREFIX__= -D__SCHAR_MAX__=127 -D__SEG_FS=1 -D__SEG_GS=1 -D__SHRT_MAX__=32767 -D__SHRT_WIDTH__=16 -D__SIG_ATOMIC_MAX__=2147483647 -D__SIG_ATOMIC_WIDTH__=32 -D__SIZEOF_DOUBLE__=8 -D__SIZEOF_FLOAT__=4 -D__SIZEOF_INT128__=16 -D__SIZEOF_INT__=4 -D__SIZEOF_LONG_DOUBLE__=16 -D__SIZEOF_LONG_LONG__=8 -D__SIZEOF_LONG__=8 -D__SIZEOF_POINTER__=8 -D__SIZEOF_PTRDIFF_T__=8 -D__SIZEOF_SHORT__=2 -D__SIZEOF_SIZE_T__=8 -D__SIZEOF_WCHAR_T__=4 -D__SIZEOF_WINT_T__=4 '-D__SIZE_FMTX__="lX"' '-D__SIZE_FMTo__="lo"' '-D__SIZE_FMTu__="lu"' '-D__SIZE_FMTx__="lx"' -D__SIZE_MAX__=18446744073709551615UL '-D__SIZE_TYPE__=long unsigned int' -D__SIZE_WIDTH__=64 -D__SSE2_MATH__=1 -D__SSE2__=1 -D__SSE3__=1 -D__SSE4_1__=1 -D__SSE_MATH__=1 -D__SSE__=1 -D__SSSE3__=1 -D__STDCPP_DEFAULT_NEW_ALIGNMENT__=16UL -D__STDCPP_THREADS__=1 -D__STDC_NO_THREADS__=1 -D__STDC_UTF_16__=1 -D__STDC_UTF_32__=1 -D__UINT16_C_SUFFIX__= '-D__UINT16_FMTX__="hX"' '-D__UINT16_FMTo__="ho"' '-D__UINT16_FMTu__="hu"' '-D__UINT16_FMTx__="hx"' -D__UINT16_MAX__=65535 '-D__UINT16_TYPE__=unsigned short' -D__UINT32_C_SUFFIX__=U '-D__UINT32_FMTX__="X"' '-D__UINT32_FMTo__="o"' '-D__UINT32_FMTu__="u"' '-D__UINT32_FMTx__="x"' -D__UINT32_MAX__=4294967295U '-D__UINT32_TYPE__=unsigned int' -D__UINT64_C_SUFFIX__=ULL '-D__UINT64_FMTX__="llX"' '-D__UINT64_FMTo__="llo"' '-D__UINT64_FMTu__="llu"' '-D__UINT64_FMTx__="llx"' -D__UINT64_MAX__=18446744073709551615ULL '-D__UINT64_TYPE__=long long unsigned int' -D__UINT8_C_SUFFIX__= '-D__UINT8_FMTX__="hhX"' '-D__UINT8_FMTo__="hho"' '-D__UINT8_FMTu__="hhu"' '-D__UINT8_FMTx__="hhx"' -D__UINT8_MAX__=255 '-D__UINT8_TYPE__=unsigned char' -D__UINTMAX_C_SUFFIX__=UL '-D__UINTMAX_FMTX__="lX"' '-D__UINTMAX_FMTo__="lo"' '-D__UINTMAX_FMTu__="lu"' '-D__UINTMAX_FMTx__="lx"' -D__UINTMAX_MAX__=18446744073709551615UL '-D__UINTMAX_TYPE__=long unsigned int' -D__UINTMAX_WIDTH__=64 '-D__UINTPTR_FMTX__="lX"' '-D__UINTPTR_FMTo__="lo"' '-D__UINTPTR_FMTu__="lu"' '-D__UINTPTR_FMTx__="lx"' -D__UINTPTR_MAX__=18446744073709551615UL '-D__UINTPTR_TYPE__=long unsigned int' -D__UINTPTR_WIDTH__=64 '-D__UINT_FAST16_FMTX__="hX"' '-D__UINT_FAST16_FMTo__="ho"' '-D__UINT_FAST16_FMTu__="hu"' '-D__UINT_FAST16_FMTx__="hx"' -D__UINT_FAST16_MAX__=65535 '-D__UINT_FAST16_TYPE__=unsigned short' '-D__UINT_FAST32_FMTX__="X"' '-D__UINT_FAST32_FMTo__="o"' '-D__UINT_FAST32_FMTu__="u"' '-D__UINT_FAST32_FMTx__="x"' -D__UINT_FAST32_MAX__=4294967295U '-D__UINT_FAST32_TYPE__=unsigned int' '-D__UINT_FAST64_FMTX__="llX"' '-D__UINT_FAST64_FMTo__="llo"' '-D__UINT_FAST64_FMTu__="llu"' '-D__UINT_FAST64_FMTx__="llx"' -D__UINT_FAST64_MAX__=18446744073709551615ULL '-D__UINT_FAST64_TYPE__=long long unsigned int' '-D__UINT_FAST8_FMTX__="hhX"' '-D__UINT_FAST8_FMTo__="hho"' '-D__UINT_FAST8_FMTu__="hhu"' '-D__UINT_FAST8_FMTx__="hhx"' -D__UINT_FAST8_MAX__=255 '-D__UINT_FAST8_TYPE__=unsigned char' '-D__UINT_LEAST16_FMTX__="hX"' '-D__UINT_LEAST16_FMTo__="ho"' '-D__UINT_LEAST16_FMTu__="hu"' '-D__UINT_LEAST16_FMTx__="hx"' -D__UINT_LEAST16_MAX__=65535 '-D__UINT_LEAST16_TYPE__=unsigned short' '-D__UINT_LEAST32_FMTX__="X"' '-D__UINT_LEAST32_FMTo__="o"' '-D__UINT_LEAST32_FMTu__="u"' '-D__UINT_LEAST32_FMTx__="x"' -D__UINT_LEAST32_MAX__=4294967295U '-D__UINT_LEAST32_TYPE__=unsigned int' '-D__UINT_LEAST64_FMTX__="llX"' '-D__UINT_LEAST64_FMTo__="llo"' '-D__UINT_LEAST64_FMTu__="llu"' '-D__UINT_LEAST64_FMTx__="llx"' -D__UINT_LEAST64_MAX__=18446744073709551615ULL '-D__UINT_LEAST64_TYPE__=long long unsigned int' '-D__UINT_LEAST8_FMTX__="hhX"' '-D__UINT_LEAST8_FMTo__="hho"' '-D__UINT_LEAST8_FMTu__="hhu"' '-D__UINT_LEAST8_FMTx__="hhx"' -D__UINT_LEAST8_MAX__=255 '-D__UINT_LEAST8_TYPE__=unsigned char' -D__USER_LABEL_PREFIX__=_ '-D__VERSION__="Apple LLVM 14.0.3 (clang-1403.0.22.14.1)"' -D__WCHAR_MAX__=2147483647 -D__WCHAR_TYPE__=int -D__WCHAR_WIDTH__=32 -D__WINT_MAX__=2147483647 -D__WINT_TYPE__=int -D__WINT_WIDTH__=32 -D__amd64=1 -D__amd64__=1 -D__apple_build_version__=14030022 '-D__block=__attribute__((__blocks__(byref)))' -D__clang__=1 '-D__clang_literal_encoding__="UTF-8"' -D__clang_major__=14 -D__clang_minor__=0 -D__clang_patchlevel__=3 '-D__clang_version__="14.0.3 (clang-1403.0.22.14.1)"' '-D__clang_wide_literal_encoding__="UTF-32"' -D__code_model_small__=1 -D__core2=1 -D__core2__=1 -D__cpp_exceptions=199711L -D__cpp_impl_destroying_delete=201806L -D__cpp_rtti=199711L -D__cpp_threadsafe_static_init=200806L -D__llvm__=1 -D__nonnull=_Nonnull -D__null_unspecified=_Null_unspecified -D__nullable=_Nullable -D__pic__=2 -D__private_extern__=extern '-D__seg_fs=__attribute__((address_space(257)))' '-D__seg_gs=__attribute__((address_space(256)))' -D__strong= -D__tune_core2__=1 -D__unsafe_unretained= '-D__weak=__attribute__((objc_gc(weak)))' -D__x86_64=1 -D__x86_64__=1 --isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -I/usr/local/include --blocks -D__GCC_HAVE_DWARF2_CFI_ASM=1 --exceptions -I/usr/local/include '-I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1' -I/Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include -I/Library/Developer/CommandLineTools/usr/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -- simple_1.cpp
+[E 16:05:09 25265] Starting compilation TRAP /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp/compilations/48/64041649_0.trap.br
+[E 16:05:09 25265] Archiving /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/src/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1.cpp
+[E 16:05:09 25265] Creating trap tarball /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp/tarballs/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1.cpp.41d89a16_0.trap.tar.br
+[E 16:05:09 25265] Emitting trap files for simple_1.cpp
+[E 16:05:09 25265] Opening existencedb in /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/existencedb/db
+[E 16:05:09 25265] Wrote 2 files to /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp/tarballs/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1.cpp.41d89a16_0.trap.tar.br
+[E 16:05:09 25265] Finished compilation TRAP /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp/compilations/48/64041649_0.trap.br
+[E 16:05:09 25265] Marking C compilation as happened.
+[E 16:05:09 25265] Setting tag c-compilation-happened
+[E 16:05:09 25265] Starting from CODEQL_TRACER_DB_ID 00000000000062AF_0000000000000001
+[E 16:05:09 25265] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:09 25265] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:09 25265] Set tag for 00000000000062AF_0000000000000001
+[E 16:05:09 25265] Set tag for 000000000000626F_0000000000000002
+[E 16:05:09 25265] Set tag for 000000000000626F_0000000000000001
+[E 16:05:09 25265] Set tag for 0000000000006268_0000000000000001
+[E 16:05:09 25265] Set tag for 0000000000006264_0000000000000003
+[E 16:05:09 25265] Set tag for 0000000000006264_0000000000000002
+[E 16:05:09 25265] Set tag for root
+[E 16:05:09 25265] Unlocking DB
+[E 16:05:09 25265] Unlocked DB
+[T 16:05:09 25263] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:09 25317] Attempting to switch stdout/stderr to 3...
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/ld.semmle.000062AE.22056960.slice.x86_64
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/ld.semmle.000062AE.22056960.slice.x86_64: replacing existing signature
+/Library/Developer/CommandLineTools/usr/bin/install_name_tool: warning: changes being made to the file will invalidate the code signature in: /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/ld.semmle.000062AE.22056960.slice.arm64
+/Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/copy-root/000001F5/Library/Developer/CommandLineTools/usr/bin/ld.semmle.000062AE.22056960.slice.arm64: replacing existing signature
+[T 16:05:10 25325] Initializing tracer.
+[T 16:05:10 25325] Initialising tags...
+[T 16:05:10 25325] ID set to 00000000000062ED_0000000000000001 (parent 000000000000626F_0000000000000002)
+[T 16:05:10 25325] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/ld (canonical: /Library/Developer/CommandLineTools/usr/bin/ld) ====
+[T 16:05:10 25325] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/ld ===
+[T 16:05:10 25325] Executing the following tracer actions:
+[T 16:05:10 25325] Tracer actions:
+[T 16:05:10 25325] pre_invocations(0)
+[T 16:05:10 25325] post_invocations(1)
+[T 16:05:10 25325] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--linker, --semmle-linker-executable, /library/developer/commandlinetools/usr/bin/ld, -demangle, -lto_library, /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib, -no_deduplicate, -dynamic, -arch, x86_64, -platform_version, macos, 13.0.0, 13.3, -syslibroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -o, simple_1, -L/usr/local/lib, /var/folders/89/586r7k990790m5mqzwf8slcw0000gn/T/simple_1-968b7e.o, -lc++, -lSystem, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a]
+[T 16:05:10 25325] trace_languages(1): [cpp]
+[T 16:05:10 25329] Attempting to switch stdout/stderr to 4...
+[T 16:05:10 25329] Initializing tracer.
+[T 16:05:10 25329] Initialising tags...
+[T 16:05:10 25329] ID set to 00000000000062F1_0000000000000001 (parent 00000000000062ED_0000000000000001)
+[E 16:05:10 25329] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:10 25329] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:10 25329] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --linker --semmle-linker-executable /library/developer/commandlinetools/usr/bin/ld -demangle -lto_library /Library/Developer/CommandLineTools/usr/lib/libLTO.dylib -no_deduplicate -dynamic -arch x86_64 -platform_version macos 13.0.0 13.3 -syslibroot /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk -o simple_1 -L/usr/local/lib /var/folders/89/586r7k990790m5mqzwf8slcw0000gn/T/simple_1-968b7e.o '-lc++' -lSystem /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/lib/darwin/libclang_rt.osx.a
+Warning: Unrecognised command line argument -no_deduplicate
+Warning: Unrecognised command line argument -platform_version
+[E 16:05:10 25329] Warning[extractor-c++]: In print_object_names: Could not open object file "macos" (error 2: No such file or directory).
+[E 16:05:10 25329] Warning[extractor-c++]: In print_object_names: Could not open object file "13.0.0" (error 2: No such file or directory).
+[E 16:05:10 25329] Warning[extractor-c++]: In print_object_names: Could not open object file "13.3" (error 2: No such file or directory).
+[T 16:05:10 25325] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25331] Attempting to switch stdout/stderr to 4...
+[T 16:05:10 25331] Initializing tracer.
+[T 16:05:10 25331] Initialising tags...
+[T 16:05:10 25331] ID set to 00000000000062F3_0000000000000001 (parent 000000000000626F_0000000000000002)
+[E 16:05:10 25331] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:10 25331] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:10 25331] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --mimic /library/developer/commandlinetools/usr/bin/clang simple_1.cpp -o simple_1
+[T 16:05:10 25332] Initializing tracer.
+[T 16:05:10 25332] Initialising tags...
+[T 16:05:10 25332] ID set to 00000000000062F4_0000000000000001 (parent 00000000000062F3_0000000000000001)
+[T 16:05:10 25332] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25332] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25332] Executing the following tracer actions:
+[T 16:05:10 25332] Tracer actions:
+[T 16:05:10 25332] pre_invocations(0)
+[T 16:05:10 25332] post_invocations(1)
+[T 16:05:10 25332] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --version]
+[T 16:05:10 25332] trace_languages(1): [cpp]
+[T 16:05:10 25334] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25334] Initializing tracer.
+[T 16:05:10 25334] Initialising tags...
+[T 16:05:10 25334] ID set to 00000000000062F6_0000000000000001 (parent 00000000000062F4_0000000000000001)
+[E 16:05:10 25334] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25332] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25335] Initializing tracer.
+[T 16:05:10 25335] Initialising tags...
+[T 16:05:10 25335] ID set to 00000000000062F7_0000000000000001 (parent 00000000000062F3_0000000000000001)
+[T 16:05:10 25335] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25335] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25335] Executing the following tracer actions:
+[T 16:05:10 25335] Tracer actions:
+[T 16:05:10 25335] pre_invocations(0)
+[T 16:05:10 25335] post_invocations(1)
+[T 16:05:10 25335] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --help]
+[T 16:05:10 25335] trace_languages(1): [cpp]
+[T 16:05:10 25337] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25337] Initializing tracer.
+[T 16:05:10 25337] Initialising tags...
+[T 16:05:10 25337] ID set to 00000000000062F9_0000000000000001 (parent 00000000000062F7_0000000000000001)
+[E 16:05:10 25337] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25335] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25338] Initializing tracer.
+[T 16:05:10 25338] Initialising tags...
+[T 16:05:10 25338] ID set to 00000000000062FA_0000000000000001 (parent 00000000000062F3_0000000000000001)
+[T 16:05:10 25338] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25338] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25338] Executing the following tracer actions:
+[T 16:05:10 25338] Tracer actions:
+[T 16:05:10 25338] pre_invocations(0)
+[T 16:05:10 25338] post_invocations(1)
+[T 16:05:10 25338] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25331_793338.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25331_793195.c]
+[T 16:05:10 25338] trace_languages(1): [cpp]
+[T 16:05:10 25340] Initializing tracer.
+[T 16:05:10 25340] Initialising tags...
+[T 16:05:10 25340] ID set to 00000000000062FC_0000000000000001 (parent 00000000000062FA_0000000000000001)
+[T 16:05:10 25340] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25340] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25340] Executing the following tracer actions:
+[T 16:05:10 25340] Tracer actions:
+[T 16:05:10 25340] pre_invocations(0)
+[T 16:05:10 25340] post_invocations(1)
+[T 16:05:10 25340] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_1_25331_793195.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -I/usr/local/include, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -no-opaque-pointers, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25331_793338.o, -x, c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25331_793195.c]
+[T 16:05:10 25340] trace_languages(1): [cpp]
+[T 16:05:10 25342] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25342] Initializing tracer.
+[T 16:05:10 25342] Initialising tags...
+[T 16:05:10 25342] ID set to 00000000000062FE_0000000000000001 (parent 00000000000062FC_0000000000000001)
+[E 16:05:10 25342] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25340] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25343] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25343] Initializing tracer.
+[T 16:05:10 25343] Initialising tags...
+[T 16:05:10 25343] ID set to 00000000000062FF_0000000000000001 (parent 00000000000062FA_0000000000000001)
+[E 16:05:10 25343] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25338] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25344] Initializing tracer.
+[T 16:05:10 25344] Initialising tags...
+[T 16:05:10 25344] ID set to 0000000000006300_0000000000000001 (parent 00000000000062F3_0000000000000001)
+[T 16:05:10 25344] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25344] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25344] Executing the following tracer actions:
+[T 16:05:10 25344] Tracer actions:
+[T 16:05:10 25344] pre_invocations(0)
+[T 16:05:10 25344] post_invocations(1)
+[T 16:05:10 25344] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25331_900735.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25331_900584.c]
+[T 16:05:10 25344] trace_languages(1): [cpp]
+[T 16:05:10 25346] Initializing tracer.
+[T 16:05:10 25346] Initialising tags...
+[T 16:05:10 25346] ID set to 0000000000006302_0000000000000001 (parent 0000000000006300_0000000000000001)
+[T 16:05:10 25346] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:10 25346] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:10 25346] Executing the following tracer actions:
+[T 16:05:10 25346] Tracer actions:
+[T 16:05:10 25346] pre_invocations(0)
+[T 16:05:10 25346] post_invocations(1)
+[T 16:05:10 25346] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_3_25331_900584.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -I/usr/local/include, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -no-opaque-pointers, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25331_900735.o, -x, c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25331_900584.c]
+[T 16:05:10 25346] trace_languages(1): [cpp]
+[T 16:05:10 25348] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25348] Initializing tracer.
+[T 16:05:10 25348] Initialising tags...
+[T 16:05:10 25348] ID set to 0000000000006304_0000000000000001 (parent 0000000000006302_0000000000000001)
+[E 16:05:10 25348] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25346] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:10 25349] Attempting to switch stdout/stderr to 7...
+[T 16:05:10 25349] Initializing tracer.
+[T 16:05:10 25349] Initialising tags...
+[T 16:05:10 25349] ID set to 0000000000006305_0000000000000001 (parent 0000000000006300_0000000000000001)
+[E 16:05:10 25349] Mimicry classification suppression detected; exiting.
+[T 16:05:10 25344] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[E 16:05:11 25331] Checking whether C compilation already happened.
+[E 16:05:11 25331] Checking for tag c-compilation-happened
+[E 16:05:11 25331] Checking CODEQL_TRACER_DB_ID 000000000000626F_0000000000000002
+[E 16:05:11 25331] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:11 25331] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:11 25331] Unlocking DB
+[E 16:05:11 25331] Unlocked DB
+[E 16:05:11 25331] Exiting as C compilation already happened.
+[T 16:05:11 25199] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25350] Attempting to switch stdout/stderr to 4...
+[T 16:05:11 25350] Initializing tracer.
+[T 16:05:11 25350] Initialising tags...
+[T 16:05:11 25350] ID set to 0000000000006306_0000000000000001 (parent 0000000000006268_0000000000000001)
+[E 16:05:11 25350] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:11 25350] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:11 25350] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --mimic /library/developer/commandlinetools/usr/bin/gcc simple_1.cpp -o simple_1
+[T 16:05:11 25351] Initializing tracer.
+[T 16:05:11 25351] Initialising tags...
+[T 16:05:11 25351] ID set to 0000000000006307_0000000000000001 (parent 0000000000006306_0000000000000001)
+[T 16:05:11 25351] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/gcc (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25351] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25351] Executing the following tracer actions:
+[T 16:05:11 25351] Tracer actions:
+[T 16:05:11 25351] pre_invocations(0)
+[T 16:05:11 25351] post_invocations(1)
+[T 16:05:11 25351] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, --version]
+[T 16:05:11 25351] trace_languages(1): [cpp]
+[T 16:05:11 25352] Initializing tracer.
+[T 16:05:11 25352] Initialising tags...
+[T 16:05:11 25352] ID set to 0000000000006308_0000000000000001 (parent 0000000000006307_0000000000000001)
+[T 16:05:11 25352] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25352] Executing the following tracer actions:
+[T 16:05:11 25352] Tracer actions:
+[T 16:05:11 25352] pre_invocations(0)
+[T 16:05:11 25352] post_invocations(0)
+[T 16:05:11 25352] trace_languages(1): [cpp]
+[T 16:05:11 25352] Initializing tracer.
+[T 16:05:11 25352] Initialising tags...
+[T 16:05:11 25352] ID set to 0000000000006308_0000000000000002 (parent 0000000000006308_0000000000000001)
+[T 16:05:11 25352] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25352] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25352] Executing the following tracer actions:
+[T 16:05:11 25352] Tracer actions:
+[T 16:05:11 25352] pre_invocations(0)
+[T 16:05:11 25352] post_invocations(1)
+[T 16:05:11 25352] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --version]
+[T 16:05:11 25352] trace_languages(1): [cpp]
+[T 16:05:11 25354] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25354] Initializing tracer.
+[T 16:05:11 25354] Initialising tags...
+[T 16:05:11 25354] ID set to 000000000000630A_0000000000000001 (parent 0000000000006308_0000000000000002)
+[E 16:05:11 25354] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25352] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25355] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25355] Initializing tracer.
+[T 16:05:11 25355] Initialising tags...
+[T 16:05:11 25355] ID set to 000000000000630B_0000000000000001 (parent 0000000000006307_0000000000000001)
+[E 16:05:11 25355] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25351] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25356] Initializing tracer.
+[T 16:05:11 25356] Initialising tags...
+[T 16:05:11 25356] ID set to 000000000000630C_0000000000000001 (parent 0000000000006306_0000000000000001)
+[T 16:05:11 25356] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/gcc (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25356] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25356] Executing the following tracer actions:
+[T 16:05:11 25356] Tracer actions:
+[T 16:05:11 25356] pre_invocations(0)
+[T 16:05:11 25356] post_invocations(1)
+[T 16:05:11 25356] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, --help]
+[T 16:05:11 25356] trace_languages(1): [cpp]
+[T 16:05:11 25357] Initializing tracer.
+[T 16:05:11 25357] Initialising tags...
+[T 16:05:11 25357] ID set to 000000000000630D_0000000000000001 (parent 000000000000630C_0000000000000001)
+[T 16:05:11 25357] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25357] Executing the following tracer actions:
+[T 16:05:11 25357] Tracer actions:
+[T 16:05:11 25357] pre_invocations(0)
+[T 16:05:11 25357] post_invocations(0)
+[T 16:05:11 25357] trace_languages(1): [cpp]
+[T 16:05:11 25357] Initializing tracer.
+[T 16:05:11 25357] Initialising tags...
+[T 16:05:11 25357] ID set to 000000000000630D_0000000000000002 (parent 000000000000630D_0000000000000001)
+[T 16:05:11 25357] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25357] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25357] Executing the following tracer actions:
+[T 16:05:11 25357] Tracer actions:
+[T 16:05:11 25357] pre_invocations(0)
+[T 16:05:11 25357] post_invocations(1)
+[T 16:05:11 25357] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --help]
+[T 16:05:11 25357] trace_languages(1): [cpp]
+[T 16:05:11 25359] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25359] Initializing tracer.
+[T 16:05:11 25359] Initialising tags...
+[T 16:05:11 25359] ID set to 000000000000630F_0000000000000001 (parent 000000000000630D_0000000000000002)
+[E 16:05:11 25359] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25357] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25360] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25360] Initializing tracer.
+[T 16:05:11 25360] Initialising tags...
+[T 16:05:11 25360] ID set to 0000000000006310_0000000000000001 (parent 000000000000630C_0000000000000001)
+[E 16:05:11 25360] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25356] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25361] Initializing tracer.
+[T 16:05:11 25361] Initialising tags...
+[T 16:05:11 25361] ID set to 0000000000006311_0000000000000001 (parent 0000000000006306_0000000000000001)
+[T 16:05:11 25361] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/gcc (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25361] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25361] Executing the following tracer actions:
+[T 16:05:11 25361] Tracer actions:
+[T 16:05:11 25361] pre_invocations(0)
+[T 16:05:11 25361] post_invocations(1)
+[T 16:05:11 25361] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25350_277519.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25350_277406.c]
+[T 16:05:11 25361] trace_languages(1): [cpp]
+[T 16:05:11 25362] Initializing tracer.
+[T 16:05:11 25362] Initialising tags...
+[T 16:05:11 25362] ID set to 0000000000006312_0000000000000001 (parent 0000000000006311_0000000000000001)
+[T 16:05:11 25362] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25362] Executing the following tracer actions:
+[T 16:05:11 25362] Tracer actions:
+[T 16:05:11 25362] pre_invocations(0)
+[T 16:05:11 25362] post_invocations(0)
+[T 16:05:11 25362] trace_languages(1): [cpp]
+[T 16:05:11 25362] Initializing tracer.
+[T 16:05:11 25362] Initialising tags...
+[T 16:05:11 25362] ID set to 0000000000006312_0000000000000002 (parent 0000000000006312_0000000000000001)
+[T 16:05:11 25362] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25362] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25362] Executing the following tracer actions:
+[T 16:05:11 25362] Tracer actions:
+[T 16:05:11 25362] pre_invocations(0)
+[T 16:05:11 25362] post_invocations(1)
+[T 16:05:11 25362] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25350_277519.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25350_277406.c]
+[T 16:05:11 25362] trace_languages(1): [cpp]
+[T 16:05:11 25364] Initializing tracer.
+[T 16:05:11 25364] Initialising tags...
+[T 16:05:11 25364] ID set to 0000000000006314_0000000000000001 (parent 0000000000006312_0000000000000002)
+[T 16:05:11 25364] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25364] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25364] Executing the following tracer actions:
+[T 16:05:11 25364] Tracer actions:
+[T 16:05:11 25364] pre_invocations(0)
+[T 16:05:11 25364] post_invocations(1)
+[T 16:05:11 25364] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_1_25350_277406.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -I/usr/local/include, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -no-opaque-pointers, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25350_277519.o, -x, c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25350_277406.c]
+[T 16:05:11 25364] trace_languages(1): [cpp]
+[T 16:05:11 25366] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25366] Initializing tracer.
+[T 16:05:11 25366] Initialising tags...
+[T 16:05:11 25366] ID set to 0000000000006316_0000000000000001 (parent 0000000000006314_0000000000000001)
+[E 16:05:11 25366] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25364] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25367] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25367] Initializing tracer.
+[T 16:05:11 25367] Initialising tags...
+[T 16:05:11 25367] ID set to 0000000000006317_0000000000000001 (parent 0000000000006312_0000000000000002)
+[E 16:05:11 25367] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25362] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25368] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25368] Initializing tracer.
+[T 16:05:11 25368] Initialising tags...
+[T 16:05:11 25368] ID set to 0000000000006318_0000000000000001 (parent 0000000000006311_0000000000000001)
+[E 16:05:11 25368] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25361] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25369] Initializing tracer.
+[T 16:05:11 25369] Initialising tags...
+[T 16:05:11 25369] ID set to 0000000000006319_0000000000000001 (parent 0000000000006306_0000000000000001)
+[T 16:05:11 25369] ==== Candidate to intercept: /library/developer/commandlinetools/usr/bin/gcc (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25369] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25369] Executing the following tracer actions:
+[T 16:05:11 25369] Tracer actions:
+[T 16:05:11 25369] pre_invocations(0)
+[T 16:05:11 25369] post_invocations(1)
+[T 16:05:11 25369] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25350_452103.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25350_452000.c]
+[T 16:05:11 25369] trace_languages(1): [cpp]
+[T 16:05:11 25370] Initializing tracer.
+[T 16:05:11 25370] Initialising tags...
+[T 16:05:11 25370] ID set to 000000000000631A_0000000000000001 (parent 0000000000006319_0000000000000001)
+[T 16:05:11 25370] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25370] Executing the following tracer actions:
+[T 16:05:11 25370] Tracer actions:
+[T 16:05:11 25370] pre_invocations(0)
+[T 16:05:11 25370] post_invocations(0)
+[T 16:05:11 25370] trace_languages(1): [cpp]
+[T 16:05:11 25370] Initializing tracer.
+[T 16:05:11 25370] Initialising tags...
+[T 16:05:11 25370] ID set to 000000000000631A_0000000000000002 (parent 000000000000631A_0000000000000001)
+[T 16:05:11 25370] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25370] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25370] Executing the following tracer actions:
+[T 16:05:11 25370] Tracer actions:
+[T 16:05:11 25370] pre_invocations(0)
+[T 16:05:11 25370] post_invocations(1)
+[T 16:05:11 25370] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25350_452103.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25350_452000.c]
+[T 16:05:11 25370] trace_languages(1): [cpp]
+[T 16:05:11 25372] Initializing tracer.
+[T 16:05:11 25372] Initialising tags...
+[T 16:05:11 25372] ID set to 000000000000631C_0000000000000001 (parent 000000000000631A_0000000000000002)
+[T 16:05:11 25372] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25372] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25372] Executing the following tracer actions:
+[T 16:05:11 25372] Tracer actions:
+[T 16:05:11 25372] pre_invocations(0)
+[T 16:05:11 25372] post_invocations(1)
+[T 16:05:11 25372] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_3_25350_452000.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -I/usr/local/include, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -no-opaque-pointers, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25350_452103.o, -x, c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25350_452000.c]
+[T 16:05:11 25372] trace_languages(1): [cpp]
+[T 16:05:11 25374] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25374] Initializing tracer.
+[T 16:05:11 25374] Initialising tags...
+[T 16:05:11 25374] ID set to 000000000000631E_0000000000000001 (parent 000000000000631C_0000000000000001)
+[E 16:05:11 25374] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25372] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25375] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25375] Initializing tracer.
+[T 16:05:11 25375] Initialising tags...
+[T 16:05:11 25375] ID set to 000000000000631F_0000000000000001 (parent 000000000000631A_0000000000000002)
+[E 16:05:11 25375] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25370] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25376] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25376] Initializing tracer.
+[T 16:05:11 25376] Initialising tags...
+[T 16:05:11 25376] ID set to 0000000000006320_0000000000000001 (parent 0000000000006319_0000000000000001)
+[E 16:05:11 25376] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25369] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[E 16:05:11 25350] Checking whether C compilation already happened.
+[E 16:05:11 25350] Checking for tag c-compilation-happened
+[E 16:05:11 25350] Checking CODEQL_TRACER_DB_ID 0000000000006268_0000000000000001
+[E 16:05:11 25350] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:11 25350] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:11 25350] Unlocking DB
+[E 16:05:11 25350] Unlocked DB
+[E 16:05:11 25350] Exiting as C compilation already happened.
+[T 16:05:11 25192] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25377] Attempting to switch stdout/stderr to 4...
+[T 16:05:11 25377] Initializing tracer.
+[T 16:05:11 25377] Initialising tags...
+[T 16:05:11 25377] ID set to 0000000000006321_0000000000000001 (parent 0000000000006264_0000000000000003)
+[E 16:05:11 25377] CodeQL C/C++ Extractor 2.13.0
+[E 16:05:11 25377] Current directory: /Users/gdjs2/Desktop/Project_LB/sample_code
+[E 16:05:11 25377] Command: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor --mimic '/usr/bin/g++' simple_1.cpp -o simple_1
+[T 16:05:11 25378] Initializing tracer.
+[T 16:05:11 25378] Initialising tags...
+[T 16:05:11 25378] ID set to 0000000000006322_0000000000000001 (parent 0000000000006321_0000000000000001)
+[T 16:05:11 25378] ==== Candidate to intercept: /usr/bin/g++ (canonical: /usr/bin/g++) ====
+[T 16:05:11 25378] Lua: === Intercepted call to /usr/bin/g++ ===
+[T 16:05:11 25378] Executing the following tracer actions:
+[T 16:05:11 25378] Tracer actions:
+[T 16:05:11 25378] pre_invocations(0)
+[T 16:05:11 25378] post_invocations(1)
+[T 16:05:11 25378] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /usr/bin/g++, --version]
+[T 16:05:11 25378] trace_languages(1): [cpp]
+[T 16:05:11 25379] Initializing tracer.
+[T 16:05:11 25379] Initialising tags...
+[T 16:05:11 25379] ID set to 0000000000006323_0000000000000001 (parent 0000000000006322_0000000000000001)
+[T 16:05:11 25379] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/g++ (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25379] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25379] Executing the following tracer actions:
+[T 16:05:11 25379] Tracer actions:
+[T 16:05:11 25379] pre_invocations(0)
+[T 16:05:11 25379] post_invocations(1)
+[T 16:05:11 25379] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, --version]
+[T 16:05:11 25379] trace_languages(1): [cpp]
+[T 16:05:11 25380] Initializing tracer.
+[T 16:05:11 25380] Initialising tags...
+[T 16:05:11 25380] ID set to 0000000000006324_0000000000000001 (parent 0000000000006323_0000000000000001)
+[T 16:05:11 25380] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25380] Executing the following tracer actions:
+[T 16:05:11 25380] Tracer actions:
+[T 16:05:11 25380] pre_invocations(0)
+[T 16:05:11 25380] post_invocations(0)
+[T 16:05:11 25380] trace_languages(1): [cpp]
+[T 16:05:11 25380] Initializing tracer.
+[T 16:05:11 25380] Initialising tags...
+[T 16:05:11 25380] ID set to 0000000000006324_0000000000000002 (parent 0000000000006324_0000000000000001)
+[T 16:05:11 25380] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang++ (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25380] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25380] Executing the following tracer actions:
+[T 16:05:11 25380] Tracer actions:
+[T 16:05:11 25380] pre_invocations(0)
+[T 16:05:11 25380] post_invocations(1)
+[T 16:05:11 25380] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --version]
+[T 16:05:11 25380] trace_languages(1): [cpp]
+[T 16:05:11 25382] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25382] Initializing tracer.
+[T 16:05:11 25382] Initialising tags...
+[T 16:05:11 25382] ID set to 0000000000006326_0000000000000001 (parent 0000000000006324_0000000000000002)
+[E 16:05:11 25382] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25380] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25383] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25383] Initializing tracer.
+[T 16:05:11 25383] Initialising tags...
+[T 16:05:11 25383] ID set to 0000000000006327_0000000000000001 (parent 0000000000006323_0000000000000001)
+[E 16:05:11 25383] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25379] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25384] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25384] Initializing tracer.
+[T 16:05:11 25384] Initialising tags...
+[T 16:05:11 25384] ID set to 0000000000006328_0000000000000001 (parent 0000000000006322_0000000000000001)
+[E 16:05:11 25384] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25378] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25385] Initializing tracer.
+[T 16:05:11 25385] Initialising tags...
+[T 16:05:11 25385] ID set to 0000000000006329_0000000000000001 (parent 0000000000006321_0000000000000001)
+[T 16:05:11 25385] ==== Candidate to intercept: /usr/bin/g++ (canonical: /usr/bin/g++) ====
+[T 16:05:11 25385] Lua: === Intercepted call to /usr/bin/g++ ===
+[T 16:05:11 25385] Executing the following tracer actions:
+[T 16:05:11 25385] Tracer actions:
+[T 16:05:11 25385] pre_invocations(0)
+[T 16:05:11 25385] post_invocations(1)
+[T 16:05:11 25385] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /usr/bin/g++, --help]
+[T 16:05:11 25385] trace_languages(1): [cpp]
+[T 16:05:11 25386] Initializing tracer.
+[T 16:05:11 25386] Initialising tags...
+[T 16:05:11 25386] ID set to 000000000000632A_0000000000000001 (parent 0000000000006329_0000000000000001)
+[T 16:05:11 25386] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/g++ (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25386] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25386] Executing the following tracer actions:
+[T 16:05:11 25386] Tracer actions:
+[T 16:05:11 25386] pre_invocations(0)
+[T 16:05:11 25386] post_invocations(1)
+[T 16:05:11 25386] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, --help]
+[T 16:05:11 25386] trace_languages(1): [cpp]
+[T 16:05:11 25387] Initializing tracer.
+[T 16:05:11 25387] Initialising tags...
+[T 16:05:11 25387] ID set to 000000000000632B_0000000000000001 (parent 000000000000632A_0000000000000001)
+[T 16:05:11 25387] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25387] Executing the following tracer actions:
+[T 16:05:11 25387] Tracer actions:
+[T 16:05:11 25387] pre_invocations(0)
+[T 16:05:11 25387] post_invocations(0)
+[T 16:05:11 25387] trace_languages(1): [cpp]
+[T 16:05:11 25387] Initializing tracer.
+[T 16:05:11 25387] Initialising tags...
+[T 16:05:11 25387] ID set to 000000000000632B_0000000000000002 (parent 000000000000632B_0000000000000001)
+[T 16:05:11 25387] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang++ (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:11 25387] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:11 25387] Executing the following tracer actions:
+[T 16:05:11 25387] Tracer actions:
+[T 16:05:11 25387] pre_invocations(0)
+[T 16:05:11 25387] post_invocations(1)
+[T 16:05:11 25387] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, --help]
+[T 16:05:11 25387] trace_languages(1): [cpp]
+[T 16:05:11 25389] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25389] Initializing tracer.
+[T 16:05:11 25389] Initialising tags...
+[T 16:05:11 25389] ID set to 000000000000632D_0000000000000001 (parent 000000000000632B_0000000000000002)
+[E 16:05:11 25389] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25387] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25390] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25390] Initializing tracer.
+[T 16:05:11 25390] Initialising tags...
+[T 16:05:11 25390] ID set to 000000000000632E_0000000000000001 (parent 000000000000632A_0000000000000001)
+[E 16:05:11 25390] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25386] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25391] Attempting to switch stdout/stderr to 7...
+[T 16:05:11 25391] Initializing tracer.
+[T 16:05:11 25391] Initialising tags...
+[T 16:05:11 25391] ID set to 000000000000632F_0000000000000001 (parent 0000000000006329_0000000000000001)
+[E 16:05:11 25391] Mimicry classification suppression detected; exiting.
+[T 16:05:11 25385] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:11 25392] Initializing tracer.
+[T 16:05:11 25392] Initialising tags...
+[T 16:05:11 25392] ID set to 0000000000006330_0000000000000001 (parent 0000000000006321_0000000000000001)
+[T 16:05:11 25392] ==== Candidate to intercept: /usr/bin/g++ (canonical: /usr/bin/g++) ====
+[T 16:05:11 25392] Lua: === Intercepted call to /usr/bin/g++ ===
+[T 16:05:11 25392] Executing the following tracer actions:
+[T 16:05:11 25392] Tracer actions:
+[T 16:05:11 25392] pre_invocations(0)
+[T 16:05:11 25392] post_invocations(1)
+[T 16:05:11 25392] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /usr/bin/g++, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25377_942671.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25377_942518.c]
+[T 16:05:11 25392] trace_languages(1): [cpp]
+[T 16:05:11 25393] Initializing tracer.
+[T 16:05:11 25393] Initialising tags...
+[T 16:05:11 25393] ID set to 0000000000006331_0000000000000001 (parent 0000000000006330_0000000000000001)
+[T 16:05:11 25393] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/g++ (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:11 25393] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:11 25393] Executing the following tracer actions:
+[T 16:05:11 25393] Tracer actions:
+[T 16:05:11 25393] pre_invocations(0)
+[T 16:05:11 25393] post_invocations(1)
+[T 16:05:11 25393] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25377_942671.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25377_942518.c]
+[T 16:05:11 25393] trace_languages(1): [cpp]
+[T 16:05:11 25394] Initializing tracer.
+[T 16:05:11 25394] Initialising tags...
+[T 16:05:11 25394] ID set to 0000000000006332_0000000000000001 (parent 0000000000006331_0000000000000001)
+[T 16:05:11 25394] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:11 25394] Executing the following tracer actions:
+[T 16:05:11 25394] Tracer actions:
+[T 16:05:11 25394] pre_invocations(0)
+[T 16:05:11 25394] post_invocations(0)
+[T 16:05:11 25394] trace_languages(1): [cpp]
+[T 16:05:12 25394] Initializing tracer.
+[T 16:05:12 25394] Initialising tags...
+[T 16:05:12 25394] ID set to 0000000000006332_0000000000000002 (parent 0000000000006332_0000000000000001)
+[T 16:05:12 25394] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang++ (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:12 25394] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:12 25394] Executing the following tracer actions:
+[T 16:05:12 25394] Tracer actions:
+[T 16:05:12 25394] pre_invocations(0)
+[T 16:05:12 25394] post_invocations(1)
+[T 16:05:12 25394] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25377_942671.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25377_942518.c]
+[T 16:05:12 25394] trace_languages(1): [cpp]
+[T 16:05:12 25396] Initializing tracer.
+[T 16:05:12 25396] Initialising tags...
+[T 16:05:12 25396] ID set to 0000000000006334_0000000000000001 (parent 0000000000006332_0000000000000002)
+[T 16:05:12 25396] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:12 25396] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:12 25396] Executing the following tracer actions:
+[T 16:05:12 25396] Tracer actions:
+[T 16:05:12 25396] pre_invocations(0)
+[T 16:05:12 25396] post_invocations(1)
+[T 16:05:12 25396] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_1_25377_942518.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -no-opaque-pointers, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_2_25377_942671.o, -x, c++, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_1_25377_942518.c]
+[T 16:05:12 25396] trace_languages(1): [cpp]
+[T 16:05:12 25398] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25398] Initializing tracer.
+[T 16:05:12 25398] Initialising tags...
+[T 16:05:12 25398] ID set to 0000000000006336_0000000000000001 (parent 0000000000006334_0000000000000001)
+[E 16:05:12 25398] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25396] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25399] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25399] Initializing tracer.
+[T 16:05:12 25399] Initialising tags...
+[T 16:05:12 25399] ID set to 0000000000006337_0000000000000001 (parent 0000000000006332_0000000000000002)
+[E 16:05:12 25399] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25394] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25400] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25400] Initializing tracer.
+[T 16:05:12 25400] Initialising tags...
+[T 16:05:12 25400] ID set to 0000000000006338_0000000000000001 (parent 0000000000006331_0000000000000001)
+[E 16:05:12 25400] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25393] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25401] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25401] Initializing tracer.
+[T 16:05:12 25401] Initialising tags...
+[T 16:05:12 25401] ID set to 0000000000006339_0000000000000001 (parent 0000000000006330_0000000000000001)
+[E 16:05:12 25401] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25392] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25402] Initializing tracer.
+[T 16:05:12 25402] Initialising tags...
+[T 16:05:12 25402] ID set to 000000000000633A_0000000000000001 (parent 0000000000006321_0000000000000001)
+[T 16:05:12 25402] ==== Candidate to intercept: /usr/bin/g++ (canonical: /usr/bin/g++) ====
+[T 16:05:12 25402] Lua: === Intercepted call to /usr/bin/g++ ===
+[T 16:05:12 25402] Executing the following tracer actions:
+[T 16:05:12 25402] Tracer actions:
+[T 16:05:12 25402] pre_invocations(0)
+[T 16:05:12 25402] post_invocations(1)
+[T 16:05:12 25402] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /usr/bin/g++, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25377_166956.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25377_166845.c]
+[T 16:05:12 25402] trace_languages(1): [cpp]
+[T 16:05:12 25403] Initializing tracer.
+[T 16:05:12 25403] Initialising tags...
+[T 16:05:12 25403] ID set to 000000000000633B_0000000000000001 (parent 000000000000633A_0000000000000001)
+[T 16:05:12 25403] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/g++ (canonical: /Library/Developer/CommandLineTools/usr/bin/gcc) ====
+[T 16:05:12 25403] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/gcc ===
+[T 16:05:12 25403] Executing the following tracer actions:
+[T 16:05:12 25403] Tracer actions:
+[T 16:05:12 25403] pre_invocations(0)
+[T 16:05:12 25403] post_invocations(1)
+[T 16:05:12 25403] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/gcc, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25377_166956.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25377_166845.c]
+[T 16:05:12 25403] trace_languages(1): [cpp]
+[T 16:05:12 25404] Initializing tracer.
+[T 16:05:12 25404] Initialising tags...
+[T 16:05:12 25404] ID set to 000000000000633C_0000000000000001 (parent 000000000000633B_0000000000000001)
+[T 16:05:12 25404] ==== Candidate to intercept: /usr/bin/xcrun (canonical: /usr/bin/xcrun) ====
+[T 16:05:12 25404] Executing the following tracer actions:
+[T 16:05:12 25404] Tracer actions:
+[T 16:05:12 25404] pre_invocations(0)
+[T 16:05:12 25404] post_invocations(0)
+[T 16:05:12 25404] trace_languages(1): [cpp]
+[T 16:05:12 25404] Initializing tracer.
+[T 16:05:12 25404] Initialising tags...
+[T 16:05:12 25404] ID set to 000000000000633C_0000000000000002 (parent 000000000000633C_0000000000000001)
+[T 16:05:12 25404] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang++ (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:12 25404] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:12 25404] Executing the following tracer actions:
+[T 16:05:12 25404] Tracer actions:
+[T 16:05:12 25404] pre_invocations(0)
+[T 16:05:12 25404] post_invocations(1)
+[T 16:05:12 25404] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -nostdinc, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25377_166956.o, -c, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25377_166845.c]
+[T 16:05:12 25404] trace_languages(1): [cpp]
+[T 16:05:12 25406] Initializing tracer.
+[T 16:05:12 25406] Initialising tags...
+[T 16:05:12 25406] ID set to 000000000000633E_0000000000000001 (parent 000000000000633C_0000000000000002)
+[T 16:05:12 25406] ==== Candidate to intercept: /Library/Developer/CommandLineTools/usr/bin/clang (canonical: /Library/Developer/CommandLineTools/usr/bin/clang) ====
+[T 16:05:12 25406] Lua: === Intercepted call to /library/developer/commandlinetools/usr/bin/clang ===
+[T 16:05:12 25406] Executing the following tracer actions:
+[T 16:05:12 25406] Tracer actions:
+[T 16:05:12 25406] pre_invocations(0)
+[T 16:05:12 25406] post_invocations(1)
+[T 16:05:12 25406] invocation: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor, args: [--mimic, /library/developer/commandlinetools/usr/bin/clang, -cc1, -triple, x86_64-apple-macosx13.0.0, -Wundef-prefix=TARGET_OS_, -Wdeprecated-objc-isa-usage, -Werror=deprecated-objc-isa-usage, -Werror=implicit-function-declaration, -emit-obj, -mrelax-all, --mrelax-relocations, -disable-free, -clear-ast-before-backend, -disable-llvm-verifier, -discard-value-names, -main-file-name, semmle_3_25377_166845.c, -mrelocation-model, pic, -pic-level, 2, -mframe-pointer=all, -fno-strict-return, -ffp-contract=on, -fno-rounding-math, -funwind-tables=2, -target-sdk-version=13.3, -fvisibility-inlines-hidden-static-local-var, -target-cpu, penryn, -tune-cpu, generic, -mllvm, -treat-scalable-fixed-error-as-warning, -debugger-tuning=lldb, -target-linker-version, 857.1, -fcoverage-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -nostdsysteminc, -nobuiltininc, -resource-dir, /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3, -isysroot, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk, -stdlib=libc++, -internal-isystem, /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1, -Wno-reorder-init-list, -Wno-implicit-int-float-conversion, -Wno-c99-designator, -Wno-final-dtor-non-final-class, -Wno-extra-semi-stmt, -Wno-misleading-indentation, -Wno-quoted-include-in-framework-header, -Wno-implicit-fallthrough, -Wno-enum-enum-conversion, -Wno-enum-float-conversion, -Wno-elaborated-enum-base, -Wno-reserved-identifier, -Wno-gnu-folding-constant, -fdeprecated-macro, -fdebug-compilation-dir=/Users/gdjs2/Desktop/Project_LB/sample_code, -ferror-limit, 19, -stack-protector, 1, -fstack-check, -mdarwin-stkchk-strong-link, -fblocks, -fencode-extended-block-signature, -fregister-global-dtors-with-atexit, -fgnuc-version=4.2.1, -fno-cxx-modules, -no-opaque-pointers, -fcxx-exceptions, -fexceptions, -fmax-type-align=16, -fcommon, -clang-vendor-feature=+disableNonDependentMemberExprInCurrentInstantiation, -fno-odr-hash-protocols, -clang-vendor-feature=+enableAggressiveVLAFolding, -clang-vendor-feature=+revert09abecef7bbf, -clang-vendor-feature=+thisNoAlignAttr, -clang-vendor-feature=+thisNoNullAttr, -mllvm, -disable-aligned-alloc-awareness=1, -D__GCC_HAVE_DWARF2_CFI_ASM=1, -o, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_4_25377_166956.o, -x, c++, /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tmp//semmle_3_25377_166845.c]
+[T 16:05:12 25406] trace_languages(1): [cpp]
+[T 16:05:12 25408] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25408] Initializing tracer.
+[T 16:05:12 25408] Initialising tags...
+[T 16:05:12 25408] ID set to 0000000000006340_0000000000000001 (parent 000000000000633E_0000000000000001)
+[E 16:05:12 25408] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25406] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25409] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25409] Initializing tracer.
+[T 16:05:12 25409] Initialising tags...
+[T 16:05:12 25409] ID set to 0000000000006341_0000000000000001 (parent 000000000000633C_0000000000000002)
+[E 16:05:12 25409] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25404] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25410] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25410] Initializing tracer.
+[T 16:05:12 25410] Initialising tags...
+[T 16:05:12 25410] ID set to 0000000000006342_0000000000000001 (parent 000000000000633B_0000000000000001)
+[E 16:05:12 25410] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25403] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[T 16:05:12 25411] Attempting to switch stdout/stderr to 7...
+[T 16:05:12 25411] Initializing tracer.
+[T 16:05:12 25411] Initialising tags...
+[T 16:05:12 25411] ID set to 0000000000006343_0000000000000001 (parent 000000000000633A_0000000000000001)
+[E 16:05:12 25411] Mimicry classification suppression detected; exiting.
+[T 16:05:12 25402] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.
+[E 16:05:12 25377] Checking whether C compilation already happened.
+[E 16:05:12 25377] Checking for tag c-compilation-happened
+[E 16:05:12 25377] Checking CODEQL_TRACER_DB_ID 0000000000006264_0000000000000003
+[E 16:05:12 25377] Locking DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:12 25377] Locked DB /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/working/tags.db
+[E 16:05:12 25377] Unlocking DB
+[E 16:05:12 25377] Unlocked DB
+[E 16:05:12 25377] Exiting as C compilation already happened.
+[T 16:05:12 25188] Extractor /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/tools/osx64/extractor terminated with exit code 0.

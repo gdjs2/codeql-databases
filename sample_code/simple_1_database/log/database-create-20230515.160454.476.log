@@ -1,0 +1,264 @@
+[2023-05-15 16:04:54] This is codeql database create ./simple_1_database --language=cpp --command=g++ simple_1.cpp -o simple_1
+[2023-05-15 16:04:54] Log file was started late.
+[2023-05-15 16:04:54] [PROGRESS] database create> Initializing database at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database.
+[2023-05-15 16:04:54] Running plumbing command: codeql database init --language=cpp --qlconfig-file=/Users/gdjs2/Desktop/Project_LB/sample_code/qlconfig.yml --source-root=/Users/gdjs2/Desktop/Project_LB/sample_code --allow-missing-source-root=false --allow-already-existing -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database
+[2023-05-15 16:04:54] Calling plumbing command: codeql resolve languages --format=json
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Scanning for [codeql-extractor.yml] from /usr/local/Caskroom/codeql/2.13.0/codeql/.codeqlmanifest.json
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/go/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/python/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/java/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/html/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/xml/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/properties/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/cpp/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/csv/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/csharp/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/javascript/codeql-extractor.yml.
+[2023-05-15 16:04:55] [DETAILS] resolve languages> Parsing /usr/local/Caskroom/codeql/2.13.0/codeql/ruby/codeql-extractor.yml.
+[2023-05-15 16:04:55] Plumbing command codeql resolve languages completed:
+                      {
+                        "extractors" : {
+                          "go" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/go"
+                            }
+                          ],
+                          "python" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/python"
+                            }
+                          ],
+                          "java" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/java",
+                              "extractor_options" : {
+                                "exclude" : {
+                                  "title" : "A glob excluding files from analysis.",
+                                  "description" : "A glob indicating what files to exclude from the analysis.\n",
+                                  "type" : "string"
+                                }
+                              }
+                            }
+                          ],
+                          "html" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/html"
+                            }
+                          ],
+                          "xml" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/xml"
+                            }
+                          ],
+                          "properties" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/properties"
+                            }
+                          ],
+                          "cpp" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/cpp"
+                            }
+                          ],
+                          "csv" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/csv"
+                            }
+                          ],
+                          "csharp" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/csharp",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'brotli' (the default, to write brotli-compressed TRAP), 'gzip', and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip|brotli)$"
+                                    }
+                                  }
+                                },
+                                "buildless" : {
+                                  "title" : "Whether to use buildless (standalone) extraction.",
+                                  "description" : "A value indicating, which type of extraction the autobuilder should perform. If 'true', then the standalone extractor will be used, otherwise tracing extraction will be performed. The default is 'false'. Note that buildless extraction will generally yield less accurate analysis results, and should only be used in cases where it is not possible to build the code (for example if it uses inaccessible dependencies).\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                },
+                                "cil" : {
+                                  "title" : "Whether to enable CIL extraction.",
+                                  "description" : "A value indicating, whether CIL extraction should be enabled. The default is 'true'.\n",
+                                  "type" : "string",
+                                  "pattern" : "^(false|true)$"
+                                }
+                              }
+                            }
+                          ],
+                          "javascript" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/javascript",
+                              "extractor_options" : { }
+                            }
+                          ],
+                          "ruby" : [
+                            {
+                              "extractor_root" : "/usr/local/Caskroom/codeql/2.13.0/codeql/ruby",
+                              "extractor_options" : {
+                                "trap" : {
+                                  "title" : "Options pertaining to TRAP.",
+                                  "description" : "Options pertaining to TRAP.",
+                                  "type" : "object",
+                                  "properties" : {
+                                    "compression" : {
+                                      "title" : "Controls compression for the TRAP files written by the extractor.",
+                                      "description" : "This option is only intended for use in debugging the extractor. Accepted values are 'gzip' (the default, to write gzip-compressed TRAP) and 'none' (to write uncompressed TRAP).\n",
+                                      "type" : "string",
+                                      "pattern" : "^(none|gzip)$"
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+[2023-05-15 16:04:55] [PROGRESS] database init> Calculating baseline information in /Users/gdjs2/Desktop/Project_LB/sample_code
+[2023-05-15 16:04:55] [SPAMMY] database init> Ignoring the following directories when processing baseline information: .git, .hg, .svn.
+[2023-05-15 16:04:55] [DETAILS] database init> Running command in /Users/gdjs2/Desktop/Project_LB/sample_code: /usr/local/Caskroom/codeql/2.13.0/codeql/tools/osx64/scc --by-file --exclude-dir .git,.hg,.svn --format json --no-large --no-min .
+[2023-05-15 16:04:55] [SPAMMY] database init> Found 1 baseline files for cpp.
+[2023-05-15 16:04:55] [PROGRESS] database init> Calculated baseline information for languages: cpp (102ms).
+[2023-05-15 16:04:55] [PROGRESS] database init> Resolving extractor cpp.
+[2023-05-15 16:04:55] [DETAILS] database init> Found candidate extractor root for cpp: /usr/local/Caskroom/codeql/2.13.0/codeql/cpp.
+[2023-05-15 16:04:55] [PROGRESS] database init> Successfully loaded extractor C/C++ (cpp) from /usr/local/Caskroom/codeql/2.13.0/codeql/cpp.
+[2023-05-15 16:04:55] [PROGRESS] database init> Created skeleton CodeQL database at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database. This in-progress database is ready to be populated by an extractor.
+[2023-05-15 16:04:55] Plumbing command codeql database init completed.
+[2023-05-15 16:04:55] [PROGRESS] database create> Running build command: [g++, simple_1.cpp, -o, simple_1]
+[2023-05-15 16:04:55] Running plumbing command: codeql database trace-command --working-dir=/Users/gdjs2/Desktop/Project_LB/sample_code --index-traceless-dbs --no-db-cluster -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database g++ simple_1.cpp -o simple_1
+[2023-05-15 16:04:55] [PROGRESS] database trace-command> Running command in /Users/gdjs2/Desktop/Project_LB/sample_code: [g++, simple_1.cpp, -o, simple_1]
+[2023-05-15 16:05:12] Plumbing command codeql database trace-command completed.
+[2023-05-15 16:05:12] [PROGRESS] database create> Finalizing database at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database.
+[2023-05-15 16:05:12] Running plumbing command: codeql database finalize --mode=normal --no-db-cluster -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database
+[2023-05-15 16:05:12] [PROGRESS] database finalize> Running TRAP import for CodeQL database at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database...
+[2023-05-15 16:05:12] Running plumbing command: codeql dataset import --dbscheme=/usr/local/Caskroom/codeql/2.13.0/codeql/cpp/semmlecode.cpp.dbscheme -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp
+[2023-05-15 16:05:12] Clearing disk cache since the version file /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp/default/cache/version does not exist
+[2023-05-15 16:05:12] Tuple pool not found. Clearing relations with cached strings
+[2023-05-15 16:05:12] Trimming disk cache at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp/default/cache in mode brutal.
+[2023-05-15 16:05:12] Sequence stamp origin is -6320336808900496470
+[2023-05-15 16:05:12] Pausing evaluation to hard-clear memory at sequence stamp o+0
+[2023-05-15 16:05:12] Unpausing evaluation
+[2023-05-15 16:05:12] Pausing evaluation to quickly trim disk at sequence stamp o+1
+[2023-05-15 16:05:12] Unpausing evaluation
+[2023-05-15 16:05:12] Pausing evaluation to zealously trim disk at sequence stamp o+2
+[2023-05-15 16:05:12] Unpausing evaluation
+[2023-05-15 16:05:12] Trimming completed (16ms): Purged everything.
+[2023-05-15 16:05:12] Scanning for files in /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/trap/cpp
+[2023-05-15 16:05:12] Grouping TRAPs by link target
+[2023-05-15 16:05:12] Scanning cpp_predefined.ee949d85.trap (simple_1.cpp.41d89a16_0.trap.tar.br) (1 of 5)
+[2023-05-15 16:05:12] Scanning simple_1.cpp.41d89a16.trap (simple_1.cpp.41d89a16_0.trap.tar.br) (2 of 5)
+[2023-05-15 16:05:12] Scanning 64041649_0.trap.br (3 of 5)
+[2023-05-15 16:05:12] Scanning simple_1.trap.br (4 of 5)
+[2023-05-15 16:05:12] Scanning sourceLocationPrefix.trap.gz (5 of 5)
+[2023-05-15 16:05:12] Assembling simple_1.link with 3 files (1 of 2)
+[2023-05-15 16:05:12] Assembling no link target with 2 files (2 of 2)
+[2023-05-15 16:05:13] Importing cpp_predefined.ee949d85.trap (simple_1.cpp.41d89a16_0.trap.tar.br) for no link target (1 of 5)
+[2023-05-15 16:05:13] Importing simple_1.cpp.41d89a16.trap (simple_1.cpp.41d89a16_0.trap.tar.br) for simple_1.link (2 of 5)
+[2023-05-15 16:05:13] Importing 64041649_0.trap.br for simple_1.link (3 of 5)
+[2023-05-15 16:05:13] Importing simple_1.trap.br for simple_1.link (4 of 5)
+[2023-05-15 16:05:13] Importing sourceLocationPrefix.trap.gz for no link target (5 of 5)
+[2023-05-15 16:05:13] Merging 1 fragment for builtintypes.
+[2023-05-15 16:05:13] Merging 1 fragment for unspecifiedtype.
+[2023-05-15 16:05:13] Merging 1 fragment for files.
+[2023-05-15 16:05:13] Merging 1 fragment for locations_default.
+[2023-05-15 16:05:13] Merging 1 fragment for link_targets.
+[2023-05-15 16:05:13] Merging 1 fragment for locations_stmt.
+[2023-05-15 16:05:13] Merging 1 fragment for locations_expr.
+[2023-05-15 16:05:13] Merging 1 fragment for usertypes.
+[2023-05-15 16:05:13] Merging 1 fragment for functions.
+[2023-05-15 16:05:13] Merging 1 fragment for link_parent.
+[2023-05-15 16:05:13] Merging 1 fragment for derivedtypes.
+[2023-05-15 16:05:13] Merging 1 fragment for pointerishsize.
+[2023-05-15 16:05:13] Merging 1 fragment for function_return_type.
+[2023-05-15 16:05:13] Merging 1 fragment for params.
+[2023-05-15 16:05:13] Merging 1 fragment for member.
+[2023-05-15 16:05:13] Merging 1 fragment for usertypesize.
+[2023-05-15 16:05:13] Merging 1 fragment for is_pod_class.
+[2023-05-15 16:05:13] Merging 1 fragment for is_standard_layout_class.
+[2023-05-15 16:05:13] Merging 1 fragment for is_complete.
+[2023-05-15 16:05:13] Merging 1 fragment for membervariables.
+[2023-05-15 16:05:13] Merging 1 fragment for fieldoffsets.
+[2023-05-15 16:05:13] Merging 1 fragment for var_decls.
+[2023-05-15 16:05:13] Merging 1 fragment for var_def.
+[2023-05-15 16:05:13] Merging 1 fragment for namespaces.
+[2023-05-15 16:05:13] Merging 1 fragment for specialnamequalifyingelements.
+[2023-05-15 16:05:13] Merging 1 fragment for mangled_name.
+[2023-05-15 16:05:13] Merging 1 fragment for specifiers.
+[2023-05-15 16:05:13] Merging 1 fragment for typespecifiers.
+[2023-05-15 16:05:13] Merging 1 fragment for fileannotations.
+[2023-05-15 16:05:13] Merging 1 fragment for numlines.
+[2023-05-15 16:05:13] Merging 1 fragment for fun_decls.
+[2023-05-15 16:05:13] Merging 1 fragment for fun_def.
+[2023-05-15 16:05:13] Merging 1 fragment for stmts.
+[2023-05-15 16:05:13] Merging 1 fragment for localvariables.
+[2023-05-15 16:05:13] Merging 1 fragment for stmt_decl_bind.
+[2023-05-15 16:05:13] Merging 1 fragment for stmt_decl_entry_bind.
+[2023-05-15 16:05:13] Merging 1 fragment for exprs.
+[2023-05-15 16:05:13] Merging 1 fragment for expr_types.
+[2023-05-15 16:05:13] Merging 1 fragment for expr_isload.
+[2023-05-15 16:05:13] Merging 1 fragment for exprparents.
+[2023-05-15 16:05:13] Merging 1 fragment for routinetypes.
+[2023-05-15 16:05:13] Merging 1 fragment for routinetypeargs.
+[2023-05-15 16:05:13] Merging 1 fragment for funbind.
+[2023-05-15 16:05:13] Merging 1 fragment for values.
+[2023-05-15 16:05:13] Merging 1 fragment for valuetext.
+[2023-05-15 16:05:13] Merging 1 fragment for valuebind.
+[2023-05-15 16:05:13] Merging 1 fragment for stmtparents.
+[2023-05-15 16:05:13] Merging 1 fragment for blockscope.
+[2023-05-15 16:05:13] Merging 1 fragment for function_entry_point.
+[2023-05-15 16:05:13] Merging 1 fragment for param_decl_bind.
+[2023-05-15 16:05:13] Merging 1 fragment for compgenerated.
+[2023-05-15 16:05:13] Merging 1 fragment for comments.
+[2023-05-15 16:05:13] Merging 1 fragment for containerparent.
+[2023-05-15 16:05:13] Merging 1 fragment for folders.
+[2023-05-15 16:05:13] Merging 1 fragment for varspecifiers.
+[2023-05-15 16:05:13] Merging 1 fragment for varbind.
+[2023-05-15 16:05:13] Merging 1 fragment for initialisers.
+[2023-05-15 16:05:13] Merging 1 fragment for iscall.
+[2023-05-15 16:05:13] Merging 1 fragment for compilations.
+[2023-05-15 16:05:13] Merging 1 fragment for compilation_args.
+[2023-05-15 16:05:13] Merging 1 fragment for compilation_compiling_files.
+[2023-05-15 16:05:13] Merging 1 fragment for compilation_time.
+[2023-05-15 16:05:13] Merging 1 fragment for compilation_finished.
+[2023-05-15 16:05:13] Merging 1 fragment for sourceLocationPrefix.
+[2023-05-15 16:05:13] Saving string and id pools to disk.
+[2023-05-15 16:05:13] Finished importing trap files.
+[2023-05-15 16:05:13] Pausing evaluation to close the cache at sequence stamp o+3
+[2023-05-15 16:05:13] The disk cache is freshly trimmed; leave it be.
+[2023-05-15 16:05:13] Unpausing evaluation
+[2023-05-15 16:05:13] Plumbing command codeql dataset import completed.
+[2023-05-15 16:05:13] [PROGRESS] database finalize> TRAP import complete (1.5s).
+[2023-05-15 16:05:13] Running plumbing command: codeql database cleanup --mode=normal -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database
+[2023-05-15 16:05:13] [PROGRESS] database cleanup> Cleaning up existing TRAP files after import...
+[2023-05-15 16:05:13] [PROGRESS] database cleanup> TRAP files cleaned up (7ms).
+[2023-05-15 16:05:13] [PROGRESS] database cleanup> Cleaning up scratch directory...
+[2023-05-15 16:05:14] [PROGRESS] database cleanup> Scratch directory cleaned up (241ms).
+[2023-05-15 16:05:14] Running plumbing command: codeql dataset cleanup --mode=normal -- /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp
+[2023-05-15 16:05:14] [PROGRESS] dataset cleanup> Cleaning up dataset in /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp.
+[2023-05-15 16:05:14] Trimming disk cache at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp/default/cache in mode normal.
+[2023-05-15 16:05:14] Sequence stamp origin is -6320336802217742106
+[2023-05-15 16:05:14] Pausing evaluation to zealously trim disk at sequence stamp o+0
+[2023-05-15 16:05:14] Unpausing evaluation
+[2023-05-15 16:05:14] Trimming completed (3ms): Trimmed disposable data from cache.
+[2023-05-15 16:05:14] Pausing evaluation to close the cache at sequence stamp o+1
+[2023-05-15 16:05:14] The disk cache is freshly trimmed; leave it be.
+[2023-05-15 16:05:14] Unpausing evaluation
+[2023-05-15 16:05:14] [PROGRESS] dataset cleanup> Trimmed disposable data from cache.
+[2023-05-15 16:05:14] [PROGRESS] dataset cleanup> Finalizing dataset in /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp
+[2023-05-15 16:05:14] [DETAILS] dataset cleanup> Finished deleting ID pool from /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database/db-cpp (3ms).
+[2023-05-15 16:05:14] Plumbing command codeql dataset cleanup completed.
+[2023-05-15 16:05:14] Plumbing command codeql database cleanup completed with status 0.
+[2023-05-15 16:05:14] Plumbing command codeql database finalize completed.
+[2023-05-15 16:05:14] [PROGRESS] database create> Successfully created database at /Users/gdjs2/Desktop/Project_LB/sample_code/simple_1_database.
+[2023-05-15 16:05:14] Terminating normally.
