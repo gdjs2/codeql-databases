@@ -2,7 +2,7 @@ int f(int x) {
 	return x+1;
 }
 
-void vul(int x) {
+void vul(int len, int x) {
 	// vul
 }
 
@@ -11,6 +11,6 @@ int main() {
 	int c = a+b;
 	int d = f(a);
 	int e = d + 10;
-	vul(e);
+	vul(10, e);
 	return 0;
 }
