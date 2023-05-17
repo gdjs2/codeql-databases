@@ -1,12 +1,8 @@
 memory_func/memory_database
-memory_func/main
 
-sample_code/simple_1
-sample_code/simple_1_database
+sample_code/simple_database
 
 ssa/ssa_database
-ssa/main
 
 use_after_free/uaf_database
-use_after_free/main
 
