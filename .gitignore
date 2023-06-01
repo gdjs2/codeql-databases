@@ -6,3 +6,4 @@ ssa/ssa_database
 
 use_after_free/uaf_database
 
+user_defined_alloc/user_defined_alloc_database
